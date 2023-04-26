@@ -1,126 +1,203 @@
 <!Doctype html>
 <html>
-<head>
-
-
-<style type="text/css">
- * {
+    <head>
+        <title>HU Break</title>
+        <style type="text/css">
+            * {
             margin: 0;
-        }
+            }
 
-        .intro {
-            background-color: #DA1212;
-            width: 100%;
-            height: 500%;
-        }
+            nav {
+                background-color: orange;
+                overflow: hidden;
+            }
 
-        .logo {
-            width: 10%;
-        }
+            nav ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
 
-        .intro h1 {
-            color: #fff;
+            nav li {
+                float: right;
+            }
+
+            nav li a {
+                display: block;
+                color: red;
+                font-weight: bold;
+                text-align: center;
+                padding: 18px;
+                text-decoration: none;
+            }
+
+            nav li a:hover {
+                background-color: white;
+            }
+
+            @media screen and (max-width: 600px) {
+                nav li {
+                    width: 100%;
+                    float: none;
+                }
+
+                nav li a {
+                    text-align: center;
+                    padding: 10px;
+                    display: block;
+                }
+
+                h1 {
+                    font-size: 24px;
+                }
+            }
+
+            .intro {
+                background-color: #DA1212;
+                width: 100%;
+                height: 90%;
+            }
+
+            .logo {
+                width: 10%;
+            }
+
+            .intro h1 {
+                color: #fff;
             font-size: 70px;
-            margin: 8%;
-        }
+            padding-left: 8%;
+            padding-right: 8%;
+            padding-bottom: 8%;
+            padding-top: 14%;
+            }
 
-        .logo2 {
-            margin-top: 0;
-            float: right;
-            margin-right: 8%;
-        }
+            .logo2 {
+                margin-top: 2%;
+                float: right;
+                margin-right: 4%;
+            }
     
+            body {
+                background-color: #DA1212;
+            }
 
- body{background-color: #DA1212}
+            td {
+                background-color:rgb(0,0,0,0.5);
+                border-radius:15px 15px 15px 15px;
+                color:white;
+                padding-right: 10px;
+                padding-bottom: 70px;
+            }
 
-td{background-color:rgb(0,0,0,0.5);border-radius:15px 15px 15px 15px;color:white;cursor:pointer}
-img{border-radius:15px 15px 15px 15px}
+            .pic {
+                border-radius:15px 15px 15px 15px;
+                margin-left: 15px;
+            }
 
+            h2 {
+                margin-top: 0px;
+            }
 
+            footer {
+                background-color: orange;
+                color: red;
+                font-weight: bold;
+                text-align: center;
+                padding: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#">سلة المشتريات</a></li>
+                <li><a href="#">العروض</a></li>
+                <li><a href="#">من نحن</a></li>
+                <li><a href="#">تواصل معنا</a></li>
+                <li><a href="#">مواقع المطاعم</a></li>
+                <li><a href="#">الصفحة الرئيسية</a></li>
+            </ul>
+            <img src="logo.png" class="logo" height="50px">
+        </nav>
 
-</style>
-</head>
-<body>
- <div class="intro">
-        <div class="nav_bar">
-            <img src="logo.png" class="logo">
+        <div class="intro">
+            <img src="FastFood.png" class="logo2">
+            <h1><em>It's not just food, It's an Experience.</em></h1>
         </div>
-        <img src="FastFood.png" class="logo2">
-        <h1><em>It's not just food,<br> It's an Experience.</em></h1>
-    </div>
-	
-	
-	
-<table style="margin-left:200px;margin-top:400px;margin-bottom:200px">
 
-<tr>
-<td style="width:1000px;text-align:right">
-<b>مطاعم ظاظا</b>
-<br>
-شاورما,سناكات,مشروبات باردة,مشروبات ساخنة
-</td>
-<th>
-<img src="food.jpg" height="100" width="100">
-</th>
-</tr>
+        <table style="margin-left:200px; margin-right:80px; margin-top:200px; margin-bottom: 50px;">
+            <tr>
+                <td style="text-align: right;">
+                    <h2>مطاعم ظاظا</h2><br>
+                    <p>أهم الأصناف : شاورما، سناكات، مشروبات باردة، مشروبات ساخنة</p><br>
+                    <p>الموقع : بجانب مبنى مطاعم الجامعة</p>
+                    <p></p>
+                </td>
+                <th>
+                    <img src="food.jpg" class="pic" height="200" width="300">
+                </th>
+            </tr>
 
+            <tr>
+                <td style="width:1000px;text-align:right">
+                    <h2> مطاعم الفلج</h2><br>
+                    <p>أهم الأصناف : شاورما، سناكات، مشروبات باردة، مشروبات ساخنة</p><br>
+                    <p>الموقع : خلف عمادة شؤون الطلبة</p>
+                </td>
+                <th>
+                    <img src="food.jpg" class="pic" height="200" width="300">
+                </th>
+            </tr>
 
-<tr>
-<td style="width:1000px;text-align:right">
-<b> مطاعم الفلج</b>
-<br>
-شاورما,سناكات,مشروبات باردة,مشروبات ساخنة
-</td>
-<th>
-<img src="food.jpg" height="100" width="100">
-</th>
-</tr>
+            <tr>
+                <td style="width:1000px;text-align:right">
+                    <h2>مطاعم اسبريسو</h2><br>
+                    <p>أهم الأصناف : شاورما، سناكات، مشروبات باردة، مشروبات ساخنة</p><br>
+                    <p>الموقع : بجانب مبنى مطاعم الجامعة</p>
+                </td>
+                <th>
+                    <img src="food.jpg" class="pic" height="200" width="300">
+                </th>
+            </tr>
 
-<tr>
+            <tr>
+                <td style="width:1000px; text-align:right">
+                    <h2>مطاعم الطب</h2><br>
+                    <p>أهم الأصناف : شاورما، سناكات، مشروبات باردة، مشروبات ساخنة</p><br>
+                    <p>الموقع : في كلية الطب</p>
+                </td>
+                <th>
+                    <img src="food.jpg" class="pic" height="200" width="300">
+                </th>
+            </tr>
 
-<td style="width:1000px;text-align:right">
-<b>مطاعم الطب</b>
-<br>
-شاورما,سناكات,مشروبات باردة,مشروبات ساخنة
-</td>
-<th>
-<img src="food.jpg" height="100" width="100">
-</th>
-</tr>
+            <tr>
+                <td style="width:1000px;text-align:right">
+                    <h2>مطاعم الشرقي</h2><br>
+                    <p>أهم الأصناف : شاورما، سناكات، مشروبات باردة، مشروبات ساخنة</p><br>
+                    <p>الموقع : في مجمع القاعات الشرقي</p>
+                </td>
+                <th>
+                    <img src="food.jpg" class="pic" height="200" width="300">
+                </th>
+            </tr>
 
-<tr>
-<td style="width:1000px;text-align:right">
-<b>مطاعم الشرقي</b>
-<br>
-شاورما,سناكات,مشروبات باردة,مشروبات ساخنة
-</td>
-<th>
-<img src="food.jpg" height="100" width="100">
-</th>
-</tr>
+            <tr>
+                <td style="width:1000px;text-align:right">
+                    <h2>مطاعم الغربي</h2><br>
+                    <p>أهم الأصناف : شاورما، سناكات، مشروبات باردة، مشروبات ساخنة</p><br>
+                    <p>الموقع : في مجمع القاعات الغربي</p>
+                </td>
+                <th>
+                    <img src="food.jpg" class="pic" height="200" width="300">
+                </th>
+            </tr>
+        </table>
 
-<tr>
-<td style="width:1000px;text-align:right">
-<b>مطاعم الغربي</b>
-<br>
-شاورما,سناكات,مشروبات باردة,مشروبات ساخنة
-</td>
-<th>
-<img src="food.jpg" height="100" width="100">
-</th>
-</tr>
-
-<tr>
-<td style="width:1000px;text-align:right">
-<b>مطاعم اسبريسو</b>
-<br>
-شاورما,سناكات,مشروبات باردة,مشروبات ساخنة
-</td>
-<th>
-<img src="food.jpg" height="100" width="100">
-</th>
-</tr>
-</table>
-
-</body>
+        <footer>
+            <p>Developed By : ...</p>
+            <br>
+            <p>HU Break &copy;</p>
+        </footer>
+    </body>
 </html>
