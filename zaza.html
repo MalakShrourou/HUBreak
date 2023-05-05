@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Candles</title>
+    <style>
+        body {
+            color: #36231e;
+            font-family: Arial, sans-serif;
+            background-color: #0606057d;
+            background-attachment: fixed;
+            margin: 0;
+        }
+        
+        nav {
+                background-color:#0606057d;
+                overflow: hidden;
+            }
+
+            nav ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
+            nav li {
+                float: right;
+            }
+
+            nav li a {
+                display: block;
+                color:white;
+                font-weight: bold;
+                text-align: center;
+                padding: 18px;
+                text-decoration: none;
+                font-family: 'Courier New', Courier, monospace;
+            }
+
+            nav li a:hover {
+                background-color: black;
+            }
+
+            .logo {
+                width: 10%;
+                border-style: solid;
+                border-radius: 50px;
+            }
+
+        .product {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 250px;
+            height: 270px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: whitesmoke;
+        }
+
+        .product img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px 5px 0 0;
+            margin: 10px;
+        }
+
+        .product h3 {
+            margin: 8px 0;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .product .price {
+            font-size: 20px;
+            font-weight: 500;
+            color: #36231e;
+        }
+
+        .product .count {
+            font-size: 18px;
+            font-weight: 500;
+            color: #36231e;
+            padding-top: 3px;
+        }
+
+        .product .button {
+            display: block;
+            width: 80%;
+            padding: 12px;
+            background: black;
+            color: #fff;
+            border: 0;
+            border-radius: 5px;
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+
+        .product .button:hover {
+            background: #634b44;
+            color: wheat;
+        }
+
+        .table {
+            width: 60%;
+            align-items: center;
+            margin-left: 120px;
+            margin-right: 100px;
+            margin-bottom: 20px;
+            ;
+        }
+
+        h1,h2 {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        footer {
+                background-color: black;
+                color: wheat;
+                text-align: center;
+                padding: 10px;
+            }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">سلة المشتريات</a></li>
+            <li><a href="#">العروض</a></li>
+            <li><a href="#">من نحن</a></li>
+            <li><a href="#">تواصل معنا</a></li>
+            <li><a href="#">مواقع المطاعم</a></li>
+            <li><a href="#">الصفحة الرئيسية</a></li>
+        </ul>
+        <img src="logo.png" class="logo" height="50px">
+    </nav>
+
+    <h1>ZAZA</h1>
+    <h2>الوجبات السريعة</h2>
+    <div>
+        <table class="table">
+            <tr>
+                <td>
+                    <form class="product" method="post" action="">
+                        <img src="burger.avif" alt="Product 1">
+                        <h3>ساندويش شاورما</h3>
+                        <span class="price">1.00 JD</span>
+                        <input type="hidden" name="price" value="9">             
+						<input type="hidden" name="ID" value="1">
+                        <span class="count"><input type="number" style="margin-right: 10px;" name="quantity" min="1" max="5" value="1">: الكمية</span>
+                        <input type="submit" class="button" value="أضف إلى السلة"></input>
+                    </form>
+                </td>
+                <td>
+                    <form class="product" method="post" action="">
+                        <img src="burger.avif" alt="Product 2">
+                        <h3>زنجر صاج</h3>
+                        <span class="price">2.00 JD</span>
+						<input type="hidden" name="price" value="12">
+						<input type="hidden" name="ID" value="2">
+                        <span class="count"><input type="number" style="margin-right: 10px;" name="quantity" min="1" max="5" value="1">: الكمية</span>
+                        <input type="submit" class="button" value="أضف إلى السلة"></input>
+                    </form>
+                </td>
+                <td>
+                    <form class="product" method="post" action="">
+                        <img src="burger.avif" alt="Product 3">
+                        <h3>فاهيتا</h3>
+                        <span class="price">1.50 JD</span>
+						<input type="hidden" name="price" value="11.25">
+						<input type="hidden" name="ID" value="3">
+                        <span class="count"><input type="number" style="margin-right: 10px;" name="quantity" min="1" max="5" value="1">: الكمية</span>
+                        <input type="submit" class="button" value="أضف إلى السلة"></input>
+                    </form>
+                </td>
+                <td>
+                    <form class="product" method="post" action="">
+                        <img src="burger.avif" alt="Product 1">
+                        <h3>برغر</h3>
+                        <span class="price">2.00 JD</span>
+                        <input type="hidden" name="price" value="9">             
+						<input type="hidden" name="ID" value="1">
+                        <span class="count"><input type="number" style="margin-right: 10px;" name="quantity" min="1" max="5" value="1">: الكمية</span>
+                        <input type="submit" class="button" value="أضف إلى السلة"></input>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form class="product" method="post" action="">
+                        <img src="burger.avif" alt="Product 4">
+                        <h3>صحن بطاطا</h3>
+                        <span class="price">1.00 JD</span>
+						<input type="hidden" name="price" value="5">
+						<input type="hidden" name="ID" value="4">
+                        <span class="count"><input type="number" style="margin-right: 10px;" name="quantity" min="1" max="5" value="1">: الكمية</span>
+                        <input type="submit" class="button" value="أضف إلى السلة"></input>
+                    </form>
+                </td>
+                <td>
+                    <form class="product" method="post" action="">
+                        <img src="burger.avif" alt="Product 5">
+                        <h3>وجبة شاورما دبل</h3>
+                        <span class="price">2.50 JD</span>
+						<input type="hidden" name="price" value="8">
+						<input type="hidden" name="ID" value="5">
+                        <span class="count"><input type="number" style="margin-right: 10px;" name="quantity" min="1" max="5" value="1">: الكمية</span>
+                        <input type="submit" class="button" value="أضف إلى السلة"></input>
+                    </form>
+                </td>
+                <td>
+                    <form class="product" method="post" action="">
+                        <img src="burger.avif" alt="Product 6">
+                        <h3>كوردن بلو</h3>
+                        <span class="price">1.50 JD</span>
+						<input type="hidden" name="price" value="11">
+						<input type="hidden" name="ID" value="6">
+                        <span class="count"><input type="number" style="margin-right: 10px;" name="quantity" min="1" max="5" value="1">: الكمية</span>
+                        <input type="submit" class="button" value="أضف إلى السلة"></input>
+                    </form>
+                </td>
+                <td>
+                    <form class="product" method="post" action="">
+                        <img src="burger.avif" alt="Product 5">
+                        <h3>حلوم</h3>
+                        <span class="price">1.00 JD</span>
+						<input type="hidden" name="price" value="8">
+						<input type="hidden" name="ID" value="5">
+                        <span class="count"><input type="number" style="margin-right: 10px;" name="quantity" min="1" max="5" value="1">: الكمية</span>
+                        <input type="submit" class="button" value="أضف إلى السلة"></input>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <h2>المعجنات</h2>
+    <div>
+        <table class="table">
+            <tr>
+                <td>
+                    <form class="product" method="post" action="">
+                        <img src="burger.avif" alt="Product 1">
+                        <h3>ساندويش شاورما</h3>
+                        <span class="price">1.00 JD</span>
+                        <input type="hidden" name="price" value="9">             
+						<input type="hidden" name="ID" value="1">
+                        <span class="count"><input type="number" style="margin-right: 10px;" name="quantity" min="1" max="5" value="1">: الكمية</span>
+                        <input type="submit" class="button" value="أضف إلى السلة"></input>
+                    </form>
+                </td>
+                <td>
+                    <form class="product" method="post" action="">
+                        <img src="burger.avif" alt="Product 2">
+                        <h3>زنجر صاج</h3>
+                        <span class="price">2.00 JD</span>
+						<input type="hidden" name="price" value="12">
+						<input type="hidden" name="ID" value="2">
+                        <span class="count"><input type="number" style="margin-right: 10px;" name="quantity" min="1" max="5" value="1">: الكمية</span>
+                        <input type="submit" class="button" value="أضف إلى السلة"></input>
+                    </form>
+                </td>
+                <td>
+                    <form class="product" method="post" action="">
+                        <img src="burger.avif" alt="Product 3">
+                        <h3>فاهيتا</h3>
+                        <span class="price">1.50 JD</span>
+						<input type="hidden" name="price" value="11.25">
+						<input type="hidden" name="ID" value="3">
+                        <span class="count"><input type="number" style="margin-right: 10px;" name="quantity" min="1" max="5" value="1">: الكمية</span>
+                        <input type="submit" class="button" value="أضف إلى السلة"></input>
+                    </form>
+                </td>
+                <td>
+                    <form class="product" method="post" action="">
+                        <img src="burger.avif" alt="Product 1">
+                        <h3>برغر</h3>
+                        <span class="price">2.00 JD</span>
+                        <input type="hidden" name="price" value="9">             
+						<input type="hidden" name="ID" value="1">
+                        <span class="count"><input type="number" style="margin-right: 10px;" name="quantity" min="1" max="5" value="1">: الكمية</span>
+                        <input type="submit" class="button" value="أضف إلى السلة"></input>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form class="product" method="post" action="">
+                        <img src="burger.avif" alt="Product 4">
+                        <h3>صحن بطاطا</h3>
+                        <span class="price">1.00 JD</span>
+						<input type="hidden" name="price" value="5">
+						<input type="hidden" name="ID" value="4">
+                        <span class="count"><input type="number" style="margin-right: 10px;" name="quantity" min="1" max="5" value="1">: الكمية</span>
+                        <input type="submit" class="button" value="أضف إلى السلة"></input>
+                    </form>
+                </td>
+                <td>
+                    <form class="product" method="post" action="">
+                        <img src="burger.avif" alt="Product 5">
+                        <h3>وجبة شاورما دبل</h3>
+                        <span class="price">2.50 JD</span>
+						<input type="hidden" name="price" value="8">
+						<input type="hidden" name="ID" value="5">
+                        <span class="count"><input type="number" style="margin-right: 10px;" name="quantity" min="1" max="5" value="1">: الكمية</span>
+                        <input type="submit" class="button" value="أضف إلى السلة"></input>
+                    </form>
+                </td>
+                <td>
+                    <form class="product" method="post" action="">
+                        <img src="burger.avif" alt="Product 6">
+                        <h3>كوردن بلو</h3>
+                        <span class="price">1.50 JD</span>
+						<input type="hidden" name="price" value="11">
+						<input type="hidden" name="ID" value="6">
+                        <span class="count"><input type="number" style="margin-right: 10px;" name="quantity" min="1" max="5" value="1">: الكمية</span>
+                        <input type="submit" class="button" value="أضف إلى السلة"></input>
+                    </form>
+                </td>
+                <td>
+                    <form class="product" method="post" action="">
+                        <img src="burger.avif" alt="Product 5">
+                        <h3>حلوم</h3>
+                        <span class="price">1.00 JD</span>
+						<input type="hidden" name="price" value="8">
+						<input type="hidden" name="ID" value="5">
+                        <span class="count"><input type="number" style="margin-right: 10px;" name="quantity" min="1" max="5" value="1">: الكمية</span>
+                        <input type="submit" class="button" value="أضف إلى السلة"></input>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <p>Developed By</p>
+        <p>HU Break Team &copy;</p>
+    </footer>
+</body>
+</html>
