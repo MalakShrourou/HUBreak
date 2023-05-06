@@ -1,0 +1,253 @@
+<!Doctype html>
+
+<html>
+
+<head>
+    <title>HU Break</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        * {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #f18b05;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav li {
+            float: right;
+        }
+
+        nav li a {
+            display: block;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            padding: 18px;
+            text-decoration: none;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        nav li a:hover {
+            background-color: #ff9208;
+        }
+
+        @media screen and (max-width: 600px) {
+            nav li {
+                width: 100%;
+                float: none;
+            }
+
+            nav li a {
+                text-align: center;
+                padding: 10px;
+                display: block;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+
+        .intro {
+            background-color: #ff9208;
+            width: 100%;
+            height: 100%;
+            padding-bottom: 4%;
+        }
+
+        .logo {
+            width: 10%;
+            border-style: solid;
+            border-radius: 50px;
+        }
+
+        .intro h1 {
+            color: #fff;
+            font-size: 70px;
+            padding-left: 8%;
+            padding-right: 8%;
+            padding-bottom: 8%;
+            padding-top: 14%;
+        }
+
+        .logo2 {
+            margin-top: 2%;
+            float: right;
+            margin-right: 4%;
+        }
+
+        td {
+            width: 1000px;
+            text-align: center;
+            border-radius: 15px;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        td p {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .pic {
+            border-style: solid;
+            border-radius: 15px 15px 15px 15px;
+            margin-left: 15px;
+        }
+
+        .rest {
+            width: 80%;
+            margin: 10%;
+            padding-left: 15px;
+            text-align: center;
+        }
+
+        .rest img {
+            width: 90%;
+            height: auto;
+        }
+
+        .rest h3 {
+            text-align: center;
+            font-size: 24px;
+            color: rgb(124, 17, 17);
+        }
+
+        footer {
+            background-color: #f18b05;
+            color: white;
+            font-weight: bold;
+            text-align: right;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="cart.php"><img src="shopping-cart.png" width="25px" style="padding-bottom: 0;"></a></li>
+            <li><a href="#">العروض</a></li>
+            <li><a href="#">من نحن</a></li>
+            <li><a href="#">تواصل معنا</a></li>
+            <li><a href="#">مواقع المطاعم</a></li>
+            <li><a href="#">الصفحة الرئيسية</a></li>
+        </ul>
+        <img src="logo.jpg" height="50px">
+    </nav>
+
+    <div class="intro">
+        <img src="FastFood.png" class="logo2">
+        <h1><em>It's not just food,<br>It's an Experience.</em></h1>
+        <br><br><br><br>
+    </div>
+    <table class="rest">
+        <tr>
+            <td><img src="food.jpg">
+                <h3>مطاعم ظاظا</h3>
+            </td>
+            <td><img src="food.jpg">
+                <h3>مطاعم الفلج</h3>
+            </td>
+            <td><img src="food.jpg">
+                <h3>مطاعم اسبريسو</h3>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="food.jpg">
+                <h3>مطاعم الشرقي</h3>
+            </td>
+            <td><img src="food.jpg">
+                <h3>مطاعم الغربي</h3>
+            </td>
+            <td><img src="food.jpg">
+                <h3>مطاعم الطب</h3>
+            </td>
+        </tr>
+    </table>
+    <!--
+    <table style="margin:100px 80px 100px 200px">
+        <tr>
+            <td>
+                <h2>مطاعم ظاظا</h2><br>
+                <p>أهم الأصناف : شاورما، سناكات، مشروبات باردة، مشروبات ساخنة</p><br>
+                <p>الموقع : بجانب مبنى مطاعم الجامعة</p>
+            </td>
+            <th><img src="food.jpg" class="pic" height="200" width="300"></th>
+        </tr>
+
+        <tr>
+            <td>
+                <h2> مطاعم الفلج</h2><br>
+                <p>أهم الأصناف : شاورما، سناكات، مشروبات باردة، مشروبات ساخنة</p><br>
+                <p>الموقع : خلف عمادة شؤون الطلبة</p>
+            </td>
+            <th><img src="food.jpg" class="pic" height="200" width="300"></th>
+        </tr>
+
+        <tr>
+            <td>
+                <h2>مطاعم اسبريسو</h2><br>
+                <p>أهم الأصناف : شاورما، سناكات، مشروبات باردة، مشروبات ساخنة</p><br>
+                <p>الموقع : بجانب مبنى مطاعم الجامعة</p>
+            </td>
+            <th><img src="food.jpg" class="pic" height="200" width="300"></th>
+        </tr>
+
+        <tr>
+            <td>
+                <h2>مطاعم الطب</h2><br>
+                <p>أهم الأصناف : شاورما، سناكات، مشروبات باردة، مشروبات ساخنة</p><br>
+                <p>الموقع : في كلية الطب</p>
+            </td>
+            <th><img src="food.jpg" class="pic" height="200" width="300"></th>
+        </tr>
+
+        <tr>
+            <td>
+                <h2>مطاعم الشرقي</h2><br>
+                <p>أهم الأصناف : شاورما، سناكات، مشروبات باردة، مشروبات ساخنة</p><br>
+                <p>الموقع : في مجمع القاعات الشرقي</p>
+            </td>
+            <th><img src="food.jpg" class="pic" height="200" width="300"></th>
+        </tr>
+
+        <tr>
+            <td>
+                <h2>مطاعم الغربي</h2><br>
+                <p>أهم الأصناف : شاورما، سناكات، مشروبات باردة، مشروبات ساخنة</p><br>
+                <p>الموقع : في مجمع القاعات الغربي</p>
+            </td>
+            <th><img src="food.jpg" class="pic" height="200" width="300"></th>
+        </tr>
+    </table>
+    -->
+    <footer>
+        <h1 style="margin-top: 20px;">نبذة عنا</h1>
+        <p style="margin-top: 10px;"> فريق من الجامعة الهاشمية حبينا نخدم المجتمع الطلابي بتوفير وقتهم </p>
+        <h1 style="margin-top: 20px ;"> المطاعم</h1>
+        <ul style="list-style: none;">
+            <li style="margin-top: 10px;">ظاظا</li>
+            <li style="margin-top: 10px;">القرية الطلابية</li>
+            <li style="margin-top: 10px;">إسبريسو</li>
+            <li style="margin-top: 10px;">الطب</li>
+            <li style="margin-top: 10px;">الشرقي</li>
+            <li style="margin-top: 10px; margin-bottom: 20px;">الغربي</li>
+        </ul>
+        <hr>
+        </hr>
+        <h2 style="text-align: center;">Developed By</h4>
+            <h3 style="text-align: center;">HU Break Team <span>&copy</span></h3>
+    </footer>
+</body>
+
+</html>
