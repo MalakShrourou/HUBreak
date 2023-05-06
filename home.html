@@ -8,6 +8,7 @@
     <style type="text/css">
         * {
             margin: 0;
+            font-family: 'Courier New', Courier, monospace;
         }
 
         nav {
@@ -34,11 +35,10 @@
             text-align: center;
             padding: 18px;
             text-decoration: none;
-            font-family: 'Courier New', Courier, monospace;
         }
 
         nav li a:hover {
-            background-color: #ff9208;
+            background-color: #fda025;
         }
 
         @media screen and (max-width: 600px) {
@@ -59,7 +59,7 @@
         }
 
         .intro {
-            background-color: #ff9208;
+            background-color: #fda025;
             width: 100%;
             height: 100%;
             padding-bottom: 4%;
@@ -91,11 +91,6 @@
             text-align: center;
             border-radius: 15px;
             color: white;
-            font-family: 'Courier New', Courier, monospace;
-        }
-
-        td p {
-            font-family: 'Courier New', Courier, monospace;
         }
 
         .pic {
@@ -129,108 +124,61 @@
             text-align: right;
             padding: 15px;
         }
+
+        a {
+            text-decoration: none;
+        }
     </style>
 </head>
 
 <body>
     <nav>
         <ul>
-            <li><a href="cart.php"><img src="shopping-cart.png" width="25px" style="padding-bottom: 0;"></a></li>
+            <li class="cart"><a href="cart.php">سلة المشترايات</a></li>
             <li><a href="#">العروض</a></li>
             <li><a href="#">من نحن</a></li>
             <li><a href="#">تواصل معنا</a></li>
             <li><a href="#">مواقع المطاعم</a></li>
-            <li><a href="#">الصفحة الرئيسية</a></li>
+            <li><a href="home.html">الصفحة الرئيسية</a></li>
         </ul>
-        <img src="logo.jpg" height="50px">
+        <img src="logo.jpg" height="48px">
     </nav>
 
     <div class="intro">
         <img src="FastFood.png" class="logo2">
-        <h1><em>It's not just food,<br>It's an Experience.</em></h1>
+        <h1><em>It's not just food,It's an Experience.</em></h1>
         <br><br><br><br>
     </div>
     <table class="rest">
         <tr>
-            <td><img src="food.jpg">
-                <h3>مطاعم ظاظا</h3>
+            <td><a href="zaza.html"><img src="food.jpg">
+                    <h3>مطاعم ظاظا</h3>
+                </a>
             </td>
-            <td><img src="food.jpg">
-                <h3>مطاعم الفلج</h3>
+            <td><a href="village.html"><img src="food.jpg">
+                    <h3>مطاعم الفلج</h3>
+                </a>
             </td>
-            <td><img src="food.jpg">
-                <h3>مطاعم اسبريسو</h3>
+            <td><a href="espressos.html"><img src="food.jpg">
+                    <h3>مطاعم اسبريسو</h3>
+                </a>
             </td>
         </tr>
         <tr>
-            <td><img src="food.jpg">
-                <h3>مطاعم الشرقي</h3>
+            <td><a href="sharqy.html"><img src="food.jpg">
+                    <h3>مطاعم الشرقي</h3>
+                </a>
             </td>
-            <td><img src="food.jpg">
-                <h3>مطاعم الغربي</h3>
+            <td><a href="gharby.html"><img src="food.jpg">
+                    <h3>مطاعم الغربي</h3>
+                </a>
             </td>
-            <td><img src="food.jpg">
-                <h3>مطاعم الطب</h3>
+            <td><a href="zaza.html"><img src="food.jpg">
+                    <h3>مطاعم الطب</h3>
+                </a>
             </td>
         </tr>
     </table>
-    <!--
-    <table style="margin:100px 80px 100px 200px">
-        <tr>
-            <td>
-                <h2>مطاعم ظاظا</h2><br>
-                <p>أهم الأصناف : شاورما، سناكات، مشروبات باردة، مشروبات ساخنة</p><br>
-                <p>الموقع : بجانب مبنى مطاعم الجامعة</p>
-            </td>
-            <th><img src="food.jpg" class="pic" height="200" width="300"></th>
-        </tr>
-
-        <tr>
-            <td>
-                <h2> مطاعم الفلج</h2><br>
-                <p>أهم الأصناف : شاورما، سناكات، مشروبات باردة، مشروبات ساخنة</p><br>
-                <p>الموقع : خلف عمادة شؤون الطلبة</p>
-            </td>
-            <th><img src="food.jpg" class="pic" height="200" width="300"></th>
-        </tr>
-
-        <tr>
-            <td>
-                <h2>مطاعم اسبريسو</h2><br>
-                <p>أهم الأصناف : شاورما، سناكات، مشروبات باردة، مشروبات ساخنة</p><br>
-                <p>الموقع : بجانب مبنى مطاعم الجامعة</p>
-            </td>
-            <th><img src="food.jpg" class="pic" height="200" width="300"></th>
-        </tr>
-
-        <tr>
-            <td>
-                <h2>مطاعم الطب</h2><br>
-                <p>أهم الأصناف : شاورما، سناكات، مشروبات باردة، مشروبات ساخنة</p><br>
-                <p>الموقع : في كلية الطب</p>
-            </td>
-            <th><img src="food.jpg" class="pic" height="200" width="300"></th>
-        </tr>
-
-        <tr>
-            <td>
-                <h2>مطاعم الشرقي</h2><br>
-                <p>أهم الأصناف : شاورما، سناكات، مشروبات باردة، مشروبات ساخنة</p><br>
-                <p>الموقع : في مجمع القاعات الشرقي</p>
-            </td>
-            <th><img src="food.jpg" class="pic" height="200" width="300"></th>
-        </tr>
-
-        <tr>
-            <td>
-                <h2>مطاعم الغربي</h2><br>
-                <p>أهم الأصناف : شاورما، سناكات، مشروبات باردة، مشروبات ساخنة</p><br>
-                <p>الموقع : في مجمع القاعات الغربي</p>
-            </td>
-            <th><img src="food.jpg" class="pic" height="200" width="300"></th>
-        </tr>
-    </table>
-    -->
     <footer>
         <h1 style="margin-top: 20px;">نبذة عنا</h1>
         <p style="margin-top: 10px;"> فريق من الجامعة الهاشمية حبينا نخدم المجتمع الطلابي بتوفير وقتهم </p>

@@ -6,7 +6,7 @@
     <style>
         body {
             color: rgb(124, 17, 17);
-            font-family: Arial, sans-serif;
+            font-family: 'Courier New', Courier, monospace;
             background-attachment: fixed;
             margin: 0;
         }
@@ -39,7 +39,7 @@
         }
 
         nav li a:hover {
-            background-color: #ff9208;
+            background-color: #fda025;
         }
 
         @media screen and (max-width: 600px) {
@@ -107,7 +107,7 @@
         }
 
         .product .button:hover {
-            background: #c47208;
+            background: #fda735;
         }
 
         .table {
@@ -126,6 +126,10 @@
             font-family: 'Courier New', Courier, monospace;
         }
 
+        h3 {
+            text-align: center;
+        }
+
         footer {
             background: #f18b05;
             color: white;
@@ -138,12 +142,12 @@
 <body>
     <nav>
         <ul>
-            <li><a href="#"><img src="shopping-cart.png" width="25px" style="padding-bottom: 0;"></a></li>
+            <li class="cart"><a href="cart.php">سلة المشترايات</a></li>
             <li><a href="#">العروض</a></li>
             <li><a href="#">من نحن</a></li>
             <li><a href="#">تواصل معنا</a></li>
             <li><a href="#">مواقع المطاعم</a></li>
-            <li><a href="#">الصفحة الرئيسية</a></li>
+            <li><a href="home.html">الصفحة الرئيسية</a></li>
         </ul>
         <img src="logo.jpg" height="50px">
     </nav>
@@ -366,7 +370,7 @@
                 <td>
                     <form class="product" method="post" action="">
                         <img src="علبة بطاطا صغيرة.jpg">
-                        <h3>علبة بطاطا صغيرة</h3>
+                        <h3>بطاطا صغيرة</h3>
                         <span class="price">0.75 JD</span>
                         <input type="hidden" name="price" value="0.75">
                         <input type="hidden" name="ID" value="17">
@@ -378,7 +382,7 @@
                 <td>
                     <form class="product" method="post" action="">
                         <img src="علبة بطاطا كبيرة.jpg">
-                        <h3>علبة بطاطا كبيرة</h3>
+                        <h3>بطاطا كبيرة</h3>
                         <span class="price">1.25 JD</span>
                         <input type="hidden" name="price" value="1.25">
                         <input type="hidden" name="ID" value="18">
@@ -390,7 +394,7 @@
                 <td>
                     <form class="product" method="post" action="">
                         <img src="علبة بطاطا صغيرة مع جبنة.jpg">
-                        <h3>علبة بطاطا صغيرة مع جبنة</h3>
+                        <h3>بطاطا صغيرة مع جبنة</h3>
                         <span class="price">1.00 JD</span>
                         <input type="hidden" name="price" value="1.00">
                         <input type="hidden" name="ID" value="19">
@@ -402,7 +406,7 @@
                 <td>
                     <form class="product" method="post" action="">
                         <img src="علبة بطاطا كبيرة مع جبنة.jpg">
-                        <h3>علبة بطاطا كبيرة مع جبنة</h3>
+                        <h3>بطاطا كبيرة مع جبنة</h3>
                         <span class="price">1.50 JD</span>
                         <input type="hidden" name="price" value="1.50">
                         <input type="hidden" name="ID" value="20">
