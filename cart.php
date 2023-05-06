@@ -59,7 +59,7 @@
 
         table {
             width: 50%;
-            margin: 20%;
+            margin: 2%;
         }
 
         footer {
@@ -92,7 +92,7 @@
     extract($_POST);
     $query = "select ID,name,quantity, price from espresso,cart where espresso.ID = cart.ID";
     $result = mysqli_query($database, $query);
-    print("<table border='1px'>");
+    print("<table width='50%'>");
     print("<thead>");
     print("<th>ID</th>");
     print("<th>Proudct</th>");
