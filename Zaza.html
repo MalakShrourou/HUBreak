@@ -27,6 +27,7 @@
 
         nav li {
             float: right;
+            height: 20px;
         }
 
         nav li a {
@@ -131,6 +132,14 @@
             text-align: center;
         }
 
+        .cart-icon {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            background-image: url("cart-icon.png");
+            background-size: contain;
+        }
+
         footer {
             background: #f18b05;
             color: white;
@@ -143,7 +152,7 @@
 <body>
     <nav>
         <ul>
-            <li class="cart"><a href="cart.php">سلة المشتريات</a></li>
+            <li><a href="cart.php"><span class="cart-icon"></span></a></li>
             <li><a href="#">العروض</a></li>
             <li><a href="#">من نحن</a></li>
             <li><a href="#">تواصل معنا</a></li>
