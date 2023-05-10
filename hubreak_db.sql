@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 10, 2023 at 07:45 PM
+-- Generation Time: May 10, 2023 at 08:24 PM
 -- Server version: 8.0.17
 -- PHP Version: 7.3.10
 
@@ -30,16 +30,10 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `cart` (
   `ID` varchar(255) NOT NULL,
+  `n` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `price` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `quantity` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Dumping data for table `cart`
---
-
-INSERT INTO `cart` (`ID`, `price`, `quantity`) VALUES
-('6', '2.25', '1');
 
 -- --------------------------------------------------------
 
@@ -154,18 +148,6 @@ INSERT INTO `medicine` (`ID`, `name`, `price`) VALUES
 (18, 'علبة بطاطا ٢٠٠ غم + جبنة', 1),
 (19, 'علبة بطاطا كبيرة', 1.25),
 (20, 'علبة بطاطا كبيرة + جبنة', 1.5);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `products`
---
-
-CREATE TABLE `products` (
-  `ID` varchar(255) NOT NULL,
-  `p_name` varchar(255) NOT NULL,
-  `p_price` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 

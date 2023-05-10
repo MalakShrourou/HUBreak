@@ -57,9 +57,10 @@
         }
 
         .table {
-            margin: 10%;
+            margin: 6% auto 0% 10%;
             width: 40%;
-            margin-bottom: 23%;
+            border: solid #f18b05;
+            color: rgb(124, 17, 17);
         }
 
         footer {
@@ -68,6 +69,7 @@
             text-align: center;
             padding: 10px;
             margin-bottom: 0;
+            margin-top: 30%;
         }
 
         .cart-icon {
@@ -87,7 +89,7 @@
             <li><a href="#">العروض</a></li>
             <li><a href="#">من نحن</a></li>
             <li><a href="#">تواصل معنا</a></li>
-            <li><a href="#">مواقع المطاعم</a></li>
+            <li><a href="#">المطاعم</a></li>
             <li><a href="Home.html">الصفحة الرئيسية</a></li>
         </ul>
         <img src="logo.jpg" height="48px">
@@ -98,11 +100,10 @@
     if (!mysqli_select_db($database, "hubreak_db"))
         die("Sorry, could not find database.");
     extract($_POST);
-    $query = "select ID,quantity,price from cart";
+    $query = "select quantity,price from cart";
     $result = mysqli_query($database, $query);
     print("<table class='table' border='1px'>");
     print("<thead>");
-    print("<th>ID</th>");
     print("<th>Quantity</th>");
     print("<th>Price</th>");
     print("</thead>");
@@ -111,10 +112,10 @@
         print("<tr>");
         foreach ($row as $value)
             print("<td>$value</td>");
-        $total = $total + $row[1] * $row[2];
+        $total = $total + $row[0] * $row[1];
         print("</tr>");
     }
-    print("<tfoot><th colspan='2'>Total</th><th>$total</th></tfoot>");
+    print("<tfoot><th>Total</th><th>$total</th></tfoot>");
     print("</table>");
     mysqli_close($database);
     ?>
