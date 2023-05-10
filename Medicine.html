@@ -4,6 +4,7 @@
 <head>
     <title>AL-Teb</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <style>
         body {
             color: rgb(124, 17, 17);
@@ -153,6 +154,100 @@
             padding-bottom: 2%;
             color: white;
             padding-top: 2%;
+        }
+
+        .rating {
+            width: 25%;
+            padding: 10px;
+            position: relative;
+            margin-left: 35%;
+            direction: rtl;
+        }
+
+        .rating .emo {
+            position: absolute;
+            font-family: FontAwesome;
+            color: #f18b05;
+            font-size: 90px;
+            bottom: 100%;
+            left: 60%;
+            transform: translateX(-50%);
+            display: inline-block;
+        }
+
+        .rating .emo:after {
+            content: '\f119';
+        }
+
+        .rating input {
+            position: absolute;
+            width: 35px;
+            height: 50px;
+            cursor: pointer;
+            transform: translateX(52px);
+            opacity: 0;
+            z-index: 5;
+        }
+
+        .rating input:nth-of-type(4):checked~.emo:after,
+        .rating input:nth-of-type(4):hover~.emo:after,
+        .rating input:nth-of-type(3):checked~.emo:after,
+        .rating input:nth-of-type(3):hover~.emo:after {
+            content: '\f11a';
+        }
+
+        .rating input:nth-of-type(1):checked~.emo:after,
+        .rating input:nth-of-type(1):hover~.emo:after,
+        .rating input:nth-of-type(2):checked~.emo:after,
+        .rating input:nth-of-type(2):hover~.emo:after {
+            content: '\f118';
+        }
+
+        .rating input:nth-of-type(1) {
+            right: 50px;
+        }
+
+        .rating input:nth-of-type(2) {
+            right: 100px;
+        }
+
+        .rating input:nth-of-type(3) {
+            right: 150px;
+        }
+
+        .rating input:nth-of-type(4) {
+            right: 200px;
+        }
+
+        .rating input:nth-of-type(5) {
+            right: 250px;
+        }
+
+        .rating input:nth-of-type(6) {
+            right: 300px;
+        }
+
+        .rating input:checked~.star:after,
+        .rating input:hover~.star:after {
+            content: '\f005';
+        }
+
+        .rating .star {
+            display: inline-block;
+            font-family: FontAwesome;
+            font-size: 42px;
+            color: #FBB202;
+            cursor: pointer;
+            margin: 3px;
+        }
+
+        .rating .star:after {
+            content: '\f006';
+        }
+
+        .rating .star:hover~.star:after,
+        .rating .star:hover:after {
+            content: '\f005';
         }
     </style>
 </head>
@@ -439,6 +534,17 @@
             </tr>
         </table>
     </div>
+    <form method="post" action="medic_r.php">
+        <div class="rating">
+            <input type="radio" name="s1" value="5" /><span class="star"> </span>
+            <input type="radio" name="s2" value="4" /><span class="star"> </span>
+            <input type="radio" name="s3" value="3" /><span class="star"> </span>
+            <input type="radio" name="s4" value="2" /><span class="star"> </span>
+            <input type="radio" name="s5" value="1" /><span class="star"> </span>
+            <span class="emo"> </span>
+        </div>
+        <button style="margin-left:49%;margin-bottom: 3%;">submit</button>
+    </form>
     <footer>
         <p>Developed By</p>
         <p>HU Break Team &copy;</p>
