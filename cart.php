@@ -84,6 +84,14 @@
         background-image: url("cart-icon.png");
         background-size: contain;
     }
+
+    .user-icon {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background-image: url("user.png");
+        background-size: contain;
+    }
     </style>
 </head>
 
@@ -91,9 +99,9 @@
     <nav>
         <ul>
             <li><a href="cart.php"><span class="cart-icon"></span></a></li>
+            <li><a href="#"><span class="user-icon"></span></a></li>
             <li><a href="#">العروض</a></li>
-            <li><a href="#">من نحن</a></li>
-            <li><a href="#">تواصل معنا</a></li>
+            <li><a href="Home.html#cont">من نحن</a></li>
             <li><a href="#">المطاعم</a></li>
             <li><a href="Home.html">الصفحة الرئيسية</a></li>
         </ul>

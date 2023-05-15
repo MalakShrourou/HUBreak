@@ -122,7 +122,7 @@
             background-color: #f18b05;
             color: white;
             font-weight: bold;
-            text-align: right;
+            text-align: center;
             padding: 15px;
         }
 
@@ -137,6 +137,14 @@
             background-image: url("cart-icon.png");
             background-size: contain;
         }
+
+        .user-icon {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            background-image: url("user.png");
+            background-size: contain;
+        }
     </style>
 </head>
 
@@ -144,10 +152,10 @@
     <nav>
         <ul>
             <li><a href="cart.php"><span class="cart-icon"></span></a></li>
+            <li><a href="#"><span class="user-icon"></span></a></li>
             <li><a href="#">العروض</a></li>
-            <li><a href="#">من نحن</a></li>
-            <li><a href="#">تواصل معنا</a></li>
-            <li><a href="#">المطاعم</a></li>
+            <li><a href="Home.html#cont">من نحن</a></li>
+            <li><a href=" #">المطاعم</a></li>
             <li><a href="Home.html">الصفحة الرئيسية</a></li>
         </ul>
         <img src="logo.jpg" height="48px">
@@ -177,11 +185,11 @@
             </td>
         </tr>
         <tr>
-            <td><a href="Eastren.html"><img src="food.jpg">
+            <td><a href="Eastern.html"><img src="food.jpg">
                     <h3>مطاعم الشرقي<br><br></h3>
                 </a>
             </td>
-            <td><a href="Westren.html"><img src="food.jpg">
+            <td><a href="Western.html"><img src="food.jpg">
                     <h3>مطاعم الغربي<br><br></h3>
                 </a>
             </td>
@@ -191,22 +199,19 @@
             </td>
         </tr>
     </table>
-    <footer>
+    <footer id="cont">
         <h1 style="margin-top: 20px;">نبذة عنا</h1>
-        <p style="margin-top: 10px;"> فريق من الجامعة الهاشمية حبينا نخدم المجتمع الطلابي بتوفير وقتهم </p>
-        <h1 style="margin-top: 20px ;"> المطاعم</h1>
-        <ul style="list-style: none;">
-            <li style="margin-top: 10px;">ظاظا</li>
-            <li style="margin-top: 10px;">القرية الطلابية</li>
-            <li style="margin-top: 10px;">إسبريسو</li>
-            <li style="margin-top: 10px;">الطب</li>
-            <li style="margin-top: 10px;">الشرقي</li>
-            <li style="margin-top: 10px; margin-bottom: 20px;">الغربي</li>
-        </ul>
+        <p style="margin-top: 10px;"> فريق طلابي من الجامعة الهاشمية حبينا نخدم زملائناالطلاب <br>بتوفير وقتهم وتقديم
+            العروض الخاصة فيهم</p>
+        <br>
+        <img src="instagram.png" width="25px">
+        <img src="facebook.png" width="25px">
+        <img src="twitter.png" width="25px">
+        <br><br>
         <hr>
-        </hr>
-        <h2 style="text-align: center;">Developed By</h2>
-        <h3 style="text-align: center;">HU Break Team <span>&copy</span></h3>
+        <br>
+        <h2>Developed By</h2>
+        <h3>HU Break Team <span>&copy</span></h3>
     </footer>
 </body>
 
