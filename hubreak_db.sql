@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 10, 2023 at 08:24 PM
+-- Generation Time: May 15, 2023 at 06:52 PM
 -- Server version: 8.0.17
 -- PHP Version: 7.3.10
 
@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `cart` (
   `ID` varchar(255) NOT NULL,
-  `n` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `n` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `price` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `quantity` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -164,6 +164,14 @@ CREATE TABLE `rating` (
   `zaza_r` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+--
+-- Dumping data for table `rating`
+--
+
+INSERT INTO `rating` (`east_r`, `espresso_r`, `medic_r`, `village_r`, `west_r`, `zaza_r`) VALUES
+('', '', '', '5', '', ''),
+('2', '', '', '', '', '');
+
 -- --------------------------------------------------------
 
 --
@@ -175,6 +183,13 @@ CREATE TABLE `user` (
   `email` varchar(255) NOT NULL,
   `pass` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`name`, `email`, `pass`) VALUES
+('Malak', 'Malakfikri36@gmail.com', 'Malak12_');
 
 -- --------------------------------------------------------
 

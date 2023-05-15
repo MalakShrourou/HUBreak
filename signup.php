@@ -9,7 +9,7 @@ if (preg_match('/^([0-9A-Za-z_$]{8})$/', $pass)) {
     if (!mysqli_query($database, $query))
         header("Location:Signup_failed.html");
     else
-        header("Location:Account_created.html");
+        header("Location:Home.html");
 } else
     die("try another pass");
 mysqli_close($database);
