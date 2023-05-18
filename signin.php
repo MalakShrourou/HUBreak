@@ -19,6 +19,6 @@ if (mysqli_num_rows($result) == 1){
 else {
 	header('Location: login.html?error=invalid_credentials');
 }
-	header("Location:Login_denied.html");
+	//header("Location:Login_denied.html");
 mysqli_close($database);
 ?>
