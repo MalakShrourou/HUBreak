@@ -4,13 +4,13 @@ if (!$database = mysqli_connect("localhost", "root", "12345678"))
 if (!mysqli_select_db($database, "hubreak_db"))
     die("Sorry, could not find database.");
 extract($_POST);
-if (preg_match('/^([0-9A-Za-z_$]{8})$/', $pass)) {
-    $query = "INSERT INTO user (name, email, pass) values ('$name' , '$email', '$pass')";
+if (preg_match('/^([0-9A-Za-z_$]{8})$/', $password)) {
+    $query = "INSERT INTO user (name, email, password) values ('$name' , '$email', '$password')";
     if (!mysqli_query($database, $query))
-        header("Location:Signup_failed.html");
+        mysqli_error($database);
     else
-        header("Location:Home.html");
+        header("Location:Login.html");
 } else
-    die("try another pass");
+    die("Try another password");
 mysqli_close($database);
 ?>
