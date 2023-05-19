@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 15, 2023 at 06:52 PM
+-- Generation Time: May 19, 2023 at 08:48 PM
 -- Server version: 8.0.17
 -- PHP Version: 7.3.10
 
@@ -148,29 +148,6 @@ INSERT INTO `medicine` (`ID`, `name`, `price`) VALUES
 (18, 'علبة بطاطا ٢٠٠ غم + جبنة', 1),
 (19, 'علبة بطاطا كبيرة', 1.25),
 (20, 'علبة بطاطا كبيرة + جبنة', 1.5);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `rating`
---
-
-CREATE TABLE `rating` (
-  `east_r` varchar(255) NOT NULL,
-  `espresso_r` varchar(255) NOT NULL,
-  `medic_r` varchar(255) NOT NULL,
-  `village_r` varchar(255) NOT NULL,
-  `west_r` varchar(255) NOT NULL,
-  `zaza_r` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Dumping data for table `rating`
---
-
-INSERT INTO `rating` (`east_r`, `espresso_r`, `medic_r`, `village_r`, `west_r`, `zaza_r`) VALUES
-('', '', '', '5', '', ''),
-('2', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
