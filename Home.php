@@ -252,7 +252,7 @@
                 </a>
                 <?php
                 $db = mysqli_connect("localhost", "root", "12345678", "hubreak_db");
-                $q = "select `zaza_r` from rating";
+                $q = "select `zaza_r` from zaza_rate";
                 $result = mysqli_query($db, $q);
                 $total = 0;
                 $count = 0;
@@ -312,7 +312,7 @@
                 </a><br>
                 <?php
                 $db2 = mysqli_connect("localhost", "root", "12345678", "hubreak_db");
-                $q2 = "select `village_r` from rating";
+                $q2 = "select `village_r` from village_rate";
                 $result2 = mysqli_query($db2, $q2);
                 $total2 = 0;
                 $count2 = 0;
@@ -372,7 +372,7 @@
                 </a>
                 <?php
                 $db3 = mysqli_connect("localhost", "root", "12345678", "hubreak_db");
-                $q3 = "select `espress_r` from rating";
+                $q3 = "select `espress_r` from espresso_rate";
                 $result3 = mysqli_query($db3, $q3);
                 $total3 = 0;
                 $count3 = 0;
@@ -434,7 +434,7 @@
                 </a>
                 <?php
                 $db4 = mysqli_connect("localhost", "root", "12345678", "hubreak_db");
-                $q4 = "select `east_r` from rating";
+                $q4 = "select `east_r` from east_rate";
                 $result4 = mysqli_query($db4, $q4);
                 $total4 = 0;
                 $count4 = 0;
@@ -495,7 +495,7 @@
                 </a>
                 <?php
                 $db5 = mysqli_connect("localhost", "root", "12345678", "hubreak_db");
-                $q5 = "select `west_r` from rating";
+                $q5 = "select `west_r` from west_rate";
                 $result5 = mysqli_query($db5, $q5);
                 $total5 = 0;
                 $count5 = 0;
@@ -555,7 +555,7 @@
                 </a>
                 <?php
                 $db6 = mysqli_connect("localhost", "root", "12345678", "hubreak_db");
-                $q6 = "select `medic_r` from rating";
+                $q6 = "select `medic_r` from medicine_rate";
                 $result6 = mysqli_query($db6, $q6);
                 $total6 = 0;
                 $count6 = 0;
