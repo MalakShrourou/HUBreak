@@ -17,7 +17,7 @@
             die("wrong query");
         $row = mysqli_fetch_assoc($result);
         if ($currentpass == $row['password'])
-            //if (preg_match('/^\d{8,}$/', $newpass))
+            if (preg_match('/^\d{8,}$/', $newpass))
                 if($newpass == $confirmnewpass){
                     $query3 = "UPDATE user SET password = '$newpass' WHERE email = '$cemail' AND password = '$currentpass'";
                     $success = "Password Changed";
@@ -25,8 +25,8 @@
                 }
                 else
                     $error = "Please Enter New Password";
-            /*else 
-                $error = "Password Must Contain At Least 8 Digits";*/
+            else 
+                $error = "Password Must Contain At Least 8 Digits";
         else
             $error = "Invalid Password";
     }
