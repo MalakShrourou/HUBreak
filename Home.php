@@ -25,7 +25,7 @@
         }
         .menu-bar ul li{
             width: 118px;
-            margin: 8px;
+            margin: 0px;
             padding: 0px; 
             margin-bottom: 2px;           
         } 
@@ -238,7 +238,7 @@
 
 <body>
    <nav class="menu-bar">
-    <img src="logo.jpg" height="47px" style="position: absolute;right: 0px;laft:-97px">
+    <img src="logo.jpg" height="39px" style="position: absolute;right: 0px;laft:-97px">
         <ul>
             <li><a href="Logout.php">تسجيل الخروج</a></li>
             <li><a href="cart.php"><span class="cart-icon"></span></a></li>
