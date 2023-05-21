@@ -247,7 +247,7 @@
     </div>
     <table class="rest">
         <tr>
-            <td><a href="Zaza.html"><img src="food.jpg">
+            <td><a href="Zaza.html"><img src="Zaza.jpg">
                     <h3>مطاعم ظاظا<br><br></h3>
                 </a>
                 <?php
@@ -307,7 +307,7 @@
                 mysqli_close($db);
                 ?>
             </td>
-            <td><a href="Village.html"><img src="food.jpg">
+            <td><a href="Village.html"><img src="Village.jpg">
                     <h3>مطاعم القرية <br>الطلابية</h3>
                 </a><br>
                 <?php
@@ -367,7 +367,7 @@
                 mysqli_close($db2);
                 ?>
             </td>
-            <td><a href="Espresso.html"><img src="food.jpg">
+            <td><a href="Espresso.html"><img src="Espresso.jpg">
                     <h3>مطاعم اسبريسو<br><br></h3>
                 </a>
                 <?php
@@ -429,7 +429,7 @@
             </td>
         </tr>
         <tr>
-            <td><a href="Eastern.html"><img src="food.jpg">
+            <td><a href="Eastern.html"><img src="Eastern.jpg">
                     <h3>مطاعم الشرقي<br><br></h3>
                 </a>
                 <?php
@@ -490,7 +490,7 @@
                 mysqli_close($db4);
                 ?>
             </td>
-            <td><a href="Western.html"><img src="food.jpg">
+            <td><a href="Western.html"><img src="Western.jpg">
                     <h3>مطاعم الغربي<br><br></h3>
                 </a>
                 <?php
@@ -550,7 +550,7 @@
                 mysqli_close($db5);
                 ?>
             </td>
-            <td><a href="Medicine.html"><img src="food.jpg">
+            <td><a href="Medicine.html"><img src="Medicine.jpg">
                     <h3>مطاعم الطب<br><br></h3>
                 </a>
                 <?php
