@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 19, 2023 at 08:48 PM
+-- Generation Time: May 21, 2023 at 11:22 PM
 -- Server version: 8.0.17
 -- PHP Version: 7.3.10
 
@@ -76,6 +76,16 @@ INSERT INTO `eastern` (`ID`, `name`, `price`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `east_rate`
+--
+
+CREATE TABLE `east_rate` (
+  `east_r` varchar(2222) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `espresso`
 --
 
@@ -114,6 +124,23 @@ INSERT INTO `espresso` (`ID`, `name`, `price`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `espresso_rate`
+--
+
+CREATE TABLE `espresso_rate` (
+  `espress_r` varchar(2222) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `espresso_rate`
+--
+
+INSERT INTO `espresso_rate` (`espress_r`) VALUES
+('3');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `medicine`
 --
 
@@ -148,6 +175,34 @@ INSERT INTO `medicine` (`ID`, `name`, `price`) VALUES
 (18, 'علبة بطاطا ٢٠٠ غم + جبنة', 1),
 (19, 'علبة بطاطا كبيرة', 1.25),
 (20, 'علبة بطاطا كبيرة + جبنة', 1.5);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `medicine_rate`
+--
+
+CREATE TABLE `medicine_rate` (
+  `medic_r` varchar(2222) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `medicine_rate`
+--
+
+INSERT INTO `medicine_rate` (`medic_r`) VALUES
+('4');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `time`
+--
+
+CREATE TABLE `time` (
+  `ID` int(255) NOT NULL,
+  `ET` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -209,6 +264,16 @@ INSERT INTO `village` (`ID`, `name`, `price`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `village_rate`
+--
+
+CREATE TABLE `village_rate` (
+  `village_r` varchar(2222) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `western`
 --
 
@@ -243,6 +308,16 @@ INSERT INTO `western` (`ID`, `name`, `price`) VALUES
 (18, 'علبة بطاطا ٢٠٠ غم + جبنة', 1),
 (19, 'علبة بطاطا كبيرة', 1.25),
 (20, 'علبة بطاطا كبيرة + جبنة', 1.5);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `west_rate`
+--
+
+CREATE TABLE `west_rate` (
+  `west_r` varchar(2222) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -282,6 +357,24 @@ INSERT INTO `zaza` (`ID`, `name`, `price`) VALUES
 (19, 'علبة بطاطا كبيرة', 1.25),
 (20, 'علبة بطاطا كبيرة + جبنة', 1.5);
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `zaza_rate`
+--
+
+CREATE TABLE `zaza_rate` (
+  `zaza_r` varchar(2222) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `zaza_rate`
+--
+
+INSERT INTO `zaza_rate` (`zaza_r`) VALUES
+('5'),
+('2');
+
 --
 -- Indexes for dumped tables
 --
@@ -302,6 +395,12 @@ ALTER TABLE `espresso`
 -- Indexes for table `medicine`
 --
 ALTER TABLE `medicine`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- Indexes for table `time`
+--
+ALTER TABLE `time`
   ADD PRIMARY KEY (`ID`);
 
 --
