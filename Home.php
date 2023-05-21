@@ -139,12 +139,13 @@
         text-decoration: none;
     }
 
-    .cart-icon {
+   .cart-icon {
         display: inline-block;
         width: 18px;
         height: 18px;
         background-image: url("cart-icon.png");
         background-size: contain;
+        margin-top: 7px;
     }
 
     .user-icon {
@@ -153,6 +154,7 @@
         height: 18px;
         background-image: url("user.png");
         background-size: contain;
+        margin-top: 7px;
     }
 
     .rating {
@@ -236,7 +238,7 @@
 
 <body>
    <nav class="menu-bar">
-    <img src="logo.jpg" height="48px" style="position: absolute;right: 0px;laft:-97px">
+    <img src="logo.jpg" height="47px" style="position: absolute;right: 0px;laft:-97px">
         <ul>
             <li><a href="Logout.php">تسجيل الخروج</a></li>
             <li><a href="cart.php"><span class="cart-icon"></span></a></li>
