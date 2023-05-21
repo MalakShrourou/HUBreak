@@ -30,6 +30,10 @@ mysqli_close($database);
     <style>
     @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
+    * {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
     .login-page {
         width: 360px;
         padding: 8% 0 0;
