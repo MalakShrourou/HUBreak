@@ -9,56 +9,64 @@
     <style type="text/css">
     * {
         margin: 0;
+        padding: 0;
         font-family: 'Courier New', Courier, monospace;
+        box-sizing: border-box;
     }
 
-    nav {
-        background-color: #f18b05;
-        overflow: hidden;
-        margin: 0;
-        padding: 0;
-    }
+   .menu-bar{
+            background: #f18b05;
+            text-align: center;
+        }
+        .menu-bar ul{
+            display: inline-flex;
+            list-style: none;
+            color: #fff;
+        }
+        .menu-bar ul li{
+            width: 118px;
+            margin: 8px;
+            padding: 0px; 
+            margin-bottom: 2px;           
+        } 
+        .menu-bar ul li a{
+            text-decoration: none;
+            color: #fff;
 
-    nav ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
+        } 
+        .menu{
+        display: none;
 
-    nav li {
-        float: right;
-        height: 20px;
     }
-
-    nav li a {
-        display: block;
-        color: white;
-        font-weight: bold;
-        text-align: center;
-        padding: 18px;
-        text-decoration: none;
-    }
-
-    nav li a:hover {
+    .menu-bar ul li:hover{
         background-color: #fda025;
     }
-
-    @media screen and (max-width: 600px) {
-        nav li {
-            width: 100%;
-            float: none;
-        }
-
-        nav li a {
-            text-align: center;
-            padding: 10px;
-            display: block;
-        }
-
-        h1 {
-            font-size: 24px;
-        }
+    .menu-bar ul li:hover .menu{
+        display: block;
+        position: absolute;
+        background-color: #FBB202;
+        margin-top: 20px;
+        margin-left: -20px;
+    }   
+    .menu-bar ul li:hover .menu ul{
+        display: block;
+        margin: 10px;
     }
+    .menu-bar ul li:hover .menu ul li{
+        width: 150px;
+        padding: 10px;
+        border-bottom: 1px dotted #fff;
+        background: transparent;
+        border-radius: 0;
+        text-align: left;
+    }
+    .menu-bar ul li:hover .menu ul li:last-child{
+        border-bottom: none
+    }
+    .menu-bar ul li:hover .menu ul li a:hover{
+        color: #33691e;
+    }
+
 
     .intro {
         background-color: #fda025;
@@ -227,17 +235,29 @@
 </head>
 
 <body>
-    <nav>
+   <nav class="menu-bar">
+    <img src="logo.jpg" height="48px" style="position: absolute;right: 0px;laft:-97px">
         <ul>
             <li><a href="Logout.php">تسجيل الخروج</a></li>
             <li><a href="cart.php"><span class="cart-icon"></span></a></li>
             <li><a href="#"><span class="user-icon"></span></a></li>
             <li><a href="#">العروض</a></li>
             <li><a href="Home.php#cont">من نحن</a></li>
-            <li><a href=" #">المطاعم</a></li>
+
+            <li class="rest"><a href=" #">المطاعم</a>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">مطاعم ظاظا</a></li>
+                        <li><a href="#">مطاعم القرية الطلابية</a></li>
+                        <li><a href="#">مطاعم اسبريسو</a></li>
+                        <li><a href="#">مطاعم الشرقي</a></li>
+                        <li><a href="#">مطاعم الغربي</a></li>
+                        <li><a href="#">مطاعم الطب</a></li>
+                    </ul>
+                </div>                 
+            </li>       
             <li><a href="Home.php">الصفحة الرئيسية</a></li>
         </ul>
-        <img src="logo.jpg" height="48px">
     </nav>
 
     <div class="intro">
