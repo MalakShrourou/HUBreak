@@ -61,7 +61,7 @@
         text-align: left;
     }
     .menu-bar ul li:hover .menu ul li:last-child{
-        border-bottom: none
+        border-bottom: none;
     }
     .menu-bar ul li:hover .menu ul li a:hover{
         color: #33691e;
