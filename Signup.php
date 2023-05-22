@@ -32,6 +32,8 @@ mysqli_close($database);
 
     * {
         font-family: 'Times New Roman', Times, serif;
+        padding:0;
+        margin:0;
     }
 
     .login-page {
@@ -48,7 +50,7 @@ mysqli_close($database);
         margin: 0 auto 100px;
         padding: 45px;
         text-align: center;
-        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.3);
     }
 
     .form input {
