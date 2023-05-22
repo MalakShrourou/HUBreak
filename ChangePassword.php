@@ -161,11 +161,13 @@ mysqli_close($database);
     .error {
         color: red;
         text-align: center;
+        font-weight: bold;
     }
 
     .success {
         color: lawngreen;
         text-align: center;
+        font-weight: bold;
     }
     </style>
 </head>
