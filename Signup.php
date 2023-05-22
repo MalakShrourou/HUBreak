@@ -14,7 +14,6 @@ if (isset($submit)) {
             $inquery = "INSERT INTO user (name, email, pass) values ($name , $email, $password)";
             mysqli_query($database, $inquery);
             $success = "Account Created";
-            header("Location:Home.php");
         } else
             $error = "Try Another Password";
     else
@@ -32,12 +31,10 @@ mysqli_close($database);
 
     * {
         font-family: 'Times New Roman', Times, serif;
-        padding:0;
-        margin:0;
     }
 
     .login-page {
-        width: 460px;
+        width: 360px;
         padding: 8% 0 0;
         margin: auto;
     }
@@ -50,7 +47,7 @@ mysqli_close($database);
         margin: 0 auto 100px;
         padding: 45px;
         text-align: center;
-        box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
     }
 
     .form input {
@@ -151,12 +148,14 @@ mysqli_close($database);
     .error {
         color: red;
         font-family: "Roboto", sans-serif;
+        font-weight: bold;
         text-align: center;
     }
 
     .success {
-        color: green;
+        color: lawngreen;
         font-family: "Roboto", sans-serif;
+        font-weight: bold;
         text-align: center;
     }
     </style>
@@ -164,7 +163,6 @@ mysqli_close($database);
 
 <body>
     <div class="login-page">
-        <img src="welcome3.png" height="150" width="500">
         <div class="form">
             <form class="login-form" method="POST">
                 <input type="text" name="name" placeholder="Name" />
