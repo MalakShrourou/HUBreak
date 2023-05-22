@@ -19,23 +19,23 @@ mysqli_close($database);
 
 <head>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: 'Times New Roman', Times, serif;
-            box-sizing: border-box;
-        }
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Times New Roman', Times, serif;
+        box-sizing: border-box;
+    }
 
-        body {
-            background-attachment: fixed;
-            background-image: url("cover.jpg");
-        }
+    body {
+        background-attachment: fixed;
+        background-image: url("cover.jpg");
+    }
 
-        h1 {
-            color: white;
-            text-align: center;
-            font-size: 80px;
-        }
+    h1 {
+        color: white;
+        text-align: center;
+        font-size: 80px;
+    }
     </style>
 </head>
 
