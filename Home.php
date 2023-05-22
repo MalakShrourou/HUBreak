@@ -7,6 +7,9 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <style type="text/css">
+    body{
+        background-image: url(cover.jpg);
+    }    
     * {
         margin: 0;
         padding: 0;
@@ -86,6 +89,7 @@
     }
 
 
+
     .intro {
         background-color: #fda025;
         width: 100%;
@@ -95,9 +99,8 @@
 
     .logo {
         width: 10%;
-        height: 40px;
-        right: 0;
-        position: absolute;
+        border-style: solid;
+        border-radius: 50px;
     }
 
     .intro h1 {
@@ -118,8 +121,13 @@
     td {
         width: 100px;
         text-align: center;
-        border-radius: 15px;
+        border-style: solid;
+        border-style-color: #fff;
+        background: #fff;
+        border-radius: 30px;
         color: white;
+        padding:5px 3px 20px 3px ;
+        box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.3);
     }
 
     .pic {
@@ -158,12 +166,13 @@
         text-decoration: none;
     }
 
-    .cart-icon {
+   .cart-icon {
         display: inline-block;
         width: 18px;
         height: 18px;
         background-image: url("cart-icon.png");
         background-size: contain;
+        margin-top: 7px;
     }
 
     .user-icon {
@@ -172,6 +181,7 @@
         height: 18px;
         background-image: url("user.png");
         background-size: contain;
+        margin-top: 7px;
     }
 
     .rating {
@@ -250,48 +260,47 @@
     .rating .star:after {
         content: '\f006';
     }
+    .picc{
+        border-radius: 200px;
+    }
+
     </style>
 </head>
 
 <body>
-    <nav class="menu-bar">
-        <img src="logo.jpg" class="logo">
+   <nav class="menu-bar">
+    <img src="logo.jpg" height="39px" style="position: absolute;right: 0px;laft:-97px">
         <ul>
+            <li><a href="Logout.php">تسجيل الخروج</a></li>
             <li><a href="cart.php"><span class="cart-icon"></span></a></li>
-            <li><a href=""><span class="user-icon"></span></a>
-                <div class="user">
-                    <ul>
-                        <li><a href="ChangePassword.php">تغيير كلمة السر</a></li>
-                        <li><a href="Logout.php">تسجيل الخروج</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li><a href="">العروض</a></li>
+            <li><a href="#"><span class="user-icon"></span></a></li>
+            <li><a href="#">العروض</a></li>
             <li><a href="Home.php#cont">من نحن</a></li>
-            <li class="rest"><a href="">المطاعم</a>
+
+            <li class="rest"><a href=" #">المطاعم</a>
                 <div class="menu">
                     <ul>
-                        <li><a href="Zaza.html">ظاظا</a></li>
-                        <li><a href="Village.html">القرية الطلابية</a></li>
-                        <li><a href="Espresso.html">اسبريسو</a></li>
-                        <li><a href="Eastern.html">الشرقي</a></li>
-                        <li><a href="Western.html">الغربي</a></li>
-                        <li><a href="Medicine.html">الطب</a></li>
+                        <li><a href="#">مطاعم ظاظا</a></li>
+                        <li><a href="#">مطاعم القرية الطلابية</a></li>
+                        <li><a href="#">مطاعم اسبريسو</a></li>
+                        <li><a href="#">مطاعم الشرقي</a></li>
+                        <li><a href="#">مطاعم الغربي</a></li>
+                        <li><a href="#">مطاعم الطب</a></li>
                     </ul>
-                </div>
-            </li>
+                </div>                 
+            </li>       
             <li><a href="Home.php">الصفحة الرئيسية</a></li>
         </ul>
     </nav>
 
     <div class="intro">
         <img src="FastFood.png" class="logo2">
-        <h1><em>It's not just food,<br>It's an Experience.</em></h1>
+        <h1><em>It's not just food,It's an Experience.</em></h1>
         <br><br><br><br>
     </div>
     <table class="rest">
         <tr>
-            <td><a href="Zaza.html"><img src="Zaza.jpg">
+            <td style="margin:20px"><a href="Zaza.html"><img src="Zaza.jpg" class="picc">
                     <h3>مطاعم ظاظا<br><br></h3>
                 </a>
                 <?php
@@ -351,7 +360,7 @@
                 mysqli_close($db);
                 ?>
             </td>
-            <td><a href="Village.html"><img src="Village.jpg">
+            <td><a href="Village.html"><img src="Village.jpg" class="picc">
                     <h3>مطاعم القرية الطلابية</h3>
                 </a><br>
                 <?php
@@ -411,7 +420,7 @@
                 mysqli_close($db2);
                 ?>
             </td>
-            <td><a href="Espresso.html"><img src="Espresso.jpg">
+            <td><a href="Espresso.html"><img src="Espresso.jpg" class="picc">
                     <h3>مطاعم اسبريسو<br><br></h3>
                 </a>
                 <?php
@@ -473,7 +482,7 @@
             </td>
         </tr>
         <tr>
-            <td><a href="Eastern.html"><img src="Eastern.jpg">
+            <td><a href="Eastern.html"><img src="Eastern.jpg" class="picc">
                     <h3>مطاعم الشرقي<br><br></h3>
                 </a>
                 <?php
@@ -534,7 +543,7 @@
                 mysqli_close($db4);
                 ?>
             </td>
-            <td><a href="Western.html"><img src="Western.jpg">
+            <td><a href="Western.html"><img src="Western.jpg" class="picc">
                     <h3>مطاعم الغربي<br><br></h3>
                 </a>
                 <?php
@@ -594,7 +603,7 @@
                 mysqli_close($db5);
                 ?>
             </td>
-            <td><a href="Medicine.html"><img src="Medicine.jpg">
+            <td><a href="Medicine.html"><img src="Medicine.jpg" class="picc">
                     <h3>مطاعم الطب<br><br></h3>
                 </a>
                 <?php
