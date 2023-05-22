@@ -35,7 +35,7 @@ mysqli_close($database);
     }
 
     .login-page {
-        width: 360px;
+        width: 460px;
         padding: 8% 0 0;
         margin: auto;
     }
@@ -162,6 +162,7 @@ mysqli_close($database);
 
 <body>
     <div class="login-page">
+        <img src="welcome3.png" height="150" width="500">
         <div class="form">
             <form class="login-form" method="POST">
                 <input type="text" name="name" placeholder="Name" />
