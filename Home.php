@@ -258,25 +258,25 @@
         <img src="logo.jpg" class="logo">
         <ul>
             <li><a href="cart.php"><span class="cart-icon"></span></a></li>
-            <li><a href="#"><span class="user-icon"></span></a>
+            <li><a href=""><span class="user-icon"></span></a>
                 <div class="user">
                     <ul>
-                        <li><a href="Logout.php">تسجيل الخروج</a></li>
                         <li><a href="ChangePassword.php">تغيير كلمة السر</a></li>
+                        <li><a href="Logout.php">تسجيل الخروج</a></li>
                     </ul>
                 </div>
             </li>
-            <li><a href="#">العروض</a></li>
+            <li><a href="">العروض</a></li>
             <li><a href="Home.php#cont">من نحن</a></li>
-            <li class="rest"><a href=" #">المطاعم</a>
+            <li class="rest"><a href="">المطاعم</a>
                 <div class="menu">
                     <ul>
-                        <li><a href="Zaza.html">مطاعم ظاظا</a></li>
-                        <li><a href="Village.html">مطاعم القرية الطلابية</a></li>
-                        <li><a href="Espresso.html">مطاعم اسبريسو</a></li>
-                        <li><a href="Eastern.html">مطاعم الشرقي</a></li>
-                        <li><a href="Western.html">مطاعم الغربي</a></li>
-                        <li><a href="Medicine.html">مطاعم الطب</a></li>
+                        <li><a href="Zaza.html">ظاظا</a></li>
+                        <li><a href="Village.html">القرية الطلابية</a></li>
+                        <li><a href="Espresso.html">اسبريسو</a></li>
+                        <li><a href="Eastern.html">الشرقي</a></li>
+                        <li><a href="Western.html">الغربي</a></li>
+                        <li><a href="Medicine.html">الطب</a></li>
                     </ul>
                 </div>
             </li>
@@ -352,7 +352,7 @@
                 ?>
             </td>
             <td><a href="Village.html"><img src="Village.jpg">
-                    <h3>مطاعم القرية <br>الطلابية</h3>
+                    <h3>مطاعم القرية الطلابية</h3>
                 </a><br>
                 <?php
                 $db2 = mysqli_connect("localhost", "root", "12345678", "hubreak_db");
