@@ -153,6 +153,7 @@ if (isset($submit)) {
     .error {
         color: red;
         font-family: "Roboto", sans-serif;
+        font-weight: bold;
         text-align: center;
     }
     </style>
