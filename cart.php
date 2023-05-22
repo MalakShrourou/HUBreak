@@ -151,6 +151,7 @@
                     <ul>
                         <li><a href="Logout.php">تسجيل الخروج</a></li>
                         <li><a href="ChangePassword.php">تغيير كلمة السر</a></li>
+                        <li><a href="DeleteAccount.php">حذف الحساب</a></li>
                     </ul>
                 </div>
             </li>

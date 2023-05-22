@@ -150,7 +150,7 @@
         .table {
             width: 80%;
             align-items: center;
-            margin-left: 12%;
+            margin-left: 9%;
         }
 
         .section {
@@ -197,8 +197,8 @@
             width: 25%;
             padding: 10px;
             position: relative;
-            margin-left: 35%;
             direction: rtl;
+            margin-left: 35%;
         }
 
         .rating .emo {
@@ -224,6 +224,17 @@
             transform: translateX(52px);
             opacity: 0;
             z-index: 5;
+        }
+
+        .submit {
+            margin-left: 47%;
+            margin-bottom: 3%;
+            background-color: #f18b05;
+            width: 70px;
+            border: 0;
+            padding: 10px;
+            color: white;
+            border-radius: 10px;
         }
 
         .rating input:nth-of-type(4):checked~.emo:after,
@@ -307,6 +318,7 @@
                     <ul>
                         <li><a href="Logout.php">تسجيل الخروج</a></li>
                         <li><a href="ChangePassword.php">تغيير كلمة السر</a></li>
+                        <li><a href="DeleteAccount.php">حذف الحساب</a></li>
                     </ul>
                 </div>
             </li>
@@ -626,7 +638,7 @@
             <input type="radio" name="s5" value="1" /><span class="star"> </span>
             <span class="emo"> </span>
         </div>
-        <button style="margin-left:49%;margin-bottom: 3%;">submit</button>
+        <button type="submit" class="submit">submit</button>
     </form>
     <footer>
         <p>Developed By</p>
