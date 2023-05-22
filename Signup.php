@@ -55,11 +55,10 @@ mysqli_close($database);
         text-align: center;
         box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.3);
         margin-top: -10px;
-        border-radius: 20px;
+        border-radius: 30px;
     }
 
     .form input {
-        outline: 0;
         background: #f2f2f2;
         width: 90%;
         border: 0;
@@ -67,10 +66,10 @@ mysqli_close($database);
         padding: 15px;
         box-sizing: border-box;
         font-size: 14px;
+        border-radius: 30px;
     }
 
     .form button {
-        outline: 0;
         background: orange;
         width: 50%;
         border: 0;
@@ -80,6 +79,7 @@ mysqli_close($database);
         -webkit-transition: all 0.3 ease;
         transition: all 0.3 ease;
         cursor: pointer;
+        border-radius: 30px;
     }
 
     .form button:hover,
