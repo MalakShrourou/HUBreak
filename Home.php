@@ -7,300 +7,306 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <style type="text/css">
-    body{
-        background-image: url(cover.jpg);
-    }    
-    * {
-        margin: 0;
-        padding: 0;
-        font-family: 'Times New Roman', Times, serif;
-        box-sizing: border-box;
-    }
+        body {
+            background-image: url(cover.jpg);
+        }
 
-    .menu-bar {
-        background: #f18b05;
-        text-align: right;
-        height: 40px;
-        margin-right: 10%;
-        padding-right: 5px;
-        font-size: large;
-    }
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+            box-sizing: border-box;
+        }
 
-    .menu-bar ul {
-        display: inline-flex;
-        list-style: none;
-        color: #fff;
-    }
+        .menu-bar {
+            background: #f18b05;
+            text-align: right;
+            height: 40px;
+            margin-right: 10%;
+            padding-right: 5px;
+            font-size: large;
+        }
 
-    .menu-bar ul li {
-        width: 120px;
-        margin: 0px;
-        padding: 10px 0px;
-        text-align: center;
-    }
+        .menu-bar ul {
+            display: inline-flex;
+            list-style: none;
+            color: #fff;
+        }
 
-    .menu-bar ul li a {
-        text-decoration: none;
-        color: #fff;
-        padding-right: 10px;
-    }
+        .menu-bar ul li {
+            width: 120px;
+            margin: 0px;
+            padding: 10px 0px;
+            text-align: center;
+        }
 
-    .menu,
-    .user {
-        display: none;
-    }
+        .menu-bar ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding-right: 10px;
+        }
 
-    .menu-bar ul li:hover {
-        background-color: #fda025;
-    }
+        .menu,
+        .user {
+            display: none;
+        }
 
-    .menu-bar ul li:hover .menu,
-    .menu-bar ul li:hover .user {
-        display: block;
-        position: absolute;
-        background-color: #FBB202;
-        margin-top: 10px;
-        margin-left: -20px;
-    }
+        .menu-bar ul li:hover {
+            background-color: #fda025;
+        }
 
-    .menu-bar ul li:hover .menu ul,
-    .menu-bar ul li:hover .user ul {
-        display: block;
-    }
+        .menu-bar ul li:hover .menu,
+        .menu-bar ul li:hover .user {
+            display: block;
+            position: absolute;
+            background-color: #FBB202;
+            margin-top: 10px;
+            margin-left: -20px;
+        }
 
-    .menu-bar ul li:hover .menu ul li,
-    .menu-bar ul li:hover .user ul li {
-        width: 150px;
-        padding: 10px;
-        border-bottom: 1px dotted #fff;
-        background: transparent;
-        border-radius: 0;
-        text-align: center;
-    }
+        .menu-bar ul li:hover .menu ul,
+        .menu-bar ul li:hover .user ul {
+            display: block;
+        }
 
-    .menu-bar ul li:hover .menu ul li:last-child,
-    .menu-bar ul li:hover .user ul li:last-child {
-        border-bottom: none;
-    }
+        .menu-bar ul li:hover .menu ul li,
+        .menu-bar ul li:hover .user ul li {
+            width: 150px;
+            padding: 10px;
+            border-bottom: 1px dotted #fff;
+            background: transparent;
+            border-radius: 0;
+            text-align: center;
+        }
 
-    .menu-bar ul li:hover .menu ul li a:hover,
-    .menu-bar ul li:hover .user ul li a:hover {
-        color: rgb(124, 17, 17);
-    }
+        .menu-bar ul li:hover .menu ul li:last-child,
+        .menu-bar ul li:hover .user ul li:last-child {
+            border-bottom: none;
+        }
 
+        .menu-bar ul li:hover .menu ul li a:hover,
+        .menu-bar ul li:hover .user ul li a:hover {
+            color: rgb(124, 17, 17);
+        }
 
+        .intro {
+            background-color: #fda025;
+            width: 100%;
+            height: 100%;
+            padding-bottom: 4%;
+        }
 
-    .intro {
-        background-color: #fda025;
-        width: 100%;
-        height: 100%;
-        padding-bottom: 4%;
-    }
+        .logo {
+            width: 10%;
+            height: 40px;
+            right: 0;
+            position: absolute;
+        }
 
-    .logo {
-        width: 10%;
-        border-style: solid;
-        border-radius: 50px;
-    }
+        .intro h1 {
+            color: #fff;
+            font-size: 70px;
+            padding-left: 8%;
+            padding-right: 8%;
+            padding-bottom: 8%;
+            padding-top: 14%;
+        }
 
-    .intro h1 {
-        color: #fff;
-        font-size: 70px;
-        padding-left: 8%;
-        padding-right: 8%;
-        padding-bottom: 8%;
-        padding-top: 14%;
-    }
+        .logo2 {
+            margin-top: 2%;
+            float: right;
+            margin-right: 4%;
+        }
 
-    .logo2 {
-        margin-top: 2%;
-        float: right;
-        margin-right: 4%;
-    }
+        tr {
+            margin: 5%;
+        }
 
-    td {
-        width: 100px;
-        text-align: center;
-        border-style: solid;
-        border-style-color: #fff;
-        background: #fff;
-        border-radius: 30px;
-        color: white;
-        padding:5px 3px 20px 3px ;
-        box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.3);
-    }
+        td {
+            width: 20%;
+            text-align: center;
+            border-style: solid;
+            border-color: #fff;
+            background: #fff;
+            border-radius: 30px;
+            color: white;
+            padding: 5px;
+            box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.3);
+        }
 
-    .pic {
-        border-style: solid;
-        border-radius: 15px 15px 15px 15px;
-        margin-left: 15px;
-    }
+        .pic {
+            border-style: solid;
+            border-radius: 15px 15px 15px 15px;
+            margin-left: 15px;
+        }
 
-    .rest {
-        width: 80%;
-        margin: 10%;
-        padding-left: 15px;
-        text-align: center;
-    }
+        .rest {
+            width: 90%;
+            margin: 5%;
+            text-align: center;
+        }
 
-    .rest img {
-        width: 100%;
-        height: auto;
-    }
+        .rest img {
+            width: 50%;
+            height: auto;
+        }
 
-    .rest h3 {
-        text-align: center;
-        font-size: 24px;
-        color: rgb(124, 17, 17);
-    }
+        .rest h3 {
+            text-align: center;
+            font-size: 24px;
+            color: rgb(124, 17, 17);
+        }
 
-    footer {
-        background-color: #f18b05;
-        color: white;
-        font-weight: bold;
-        text-align: center;
-        padding: 15px;
-    }
+        footer {
+            background-color: #f18b05;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            padding: 15px;
+        }
 
-    a {
-        text-decoration: none;
-    }
+        a {
+            text-decoration: none;
+        }
 
-   .cart-icon {
-        display: inline-block;
-        width: 18px;
-        height: 18px;
-        background-image: url("cart-icon.png");
-        background-size: contain;
-        margin-top: 7px;
-    }
+        .cart-icon {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            background-image: url("cart-icon.png");
+            background-size: contain;
+        }
 
-    .user-icon {
-        display: inline-block;
-        width: 18px;
-        height: 18px;
-        background-image: url("user.png");
-        background-size: contain;
-        margin-top: 7px;
-    }
+        .user-icon {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            background-image: url("user.png");
+            background-size: contain;
+        }
 
-    .rating {
-        width: 100%;
-        text-align: center;
-        padding: 10px;
-        position: relative;
-        direction: rtl;
-    }
+        .rating {
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            direction: rtl;
+        }
 
-    .rating input {
-        position: absolute;
-        width: 35px;
-        height: 50px;
-        cursor: pointer;
-        transform: translateX(52px);
-        opacity: 0;
-        z-index: 5;
-        text-align: center;
-    }
+        .rating input {
+            position: absolute;
+            width: 35px;
+            height: 50px;
+            cursor: pointer;
+            transform: translateX(52px);
+            opacity: 0;
+            z-index: 5;
+            text-align: center;
+        }
 
-    .rating input:nth-of-type(4):checked~.emo:after,
-    .rating input:nth-of-type(4):hover~.emo:after,
-    .rating input:nth-of-type(3):checked~.emo:after,
-    .rating input:nth-of-type(3):hover~.emo:after {
-        content: '\f11a';
-    }
+        .rating input:nth-of-type(4):checked~.emo:after,
+        .rating input:nth-of-type(4):hover~.emo:after,
+        .rating input:nth-of-type(3):checked~.emo:after,
+        .rating input:nth-of-type(3):hover~.emo:after {
+            content: '\f11a';
+        }
 
-    .rating input:nth-of-type(1):checked~.emo:after,
-    .rating input:nth-of-type(1):hover~.emo:after,
-    .rating input:nth-of-type(2):checked~.emo:after,
-    .rating input:nth-of-type(2):hover~.emo:after {
-        content: '\f118';
-    }
+        .rating input:nth-of-type(1):checked~.emo:after,
+        .rating input:nth-of-type(1):hover~.emo:after,
+        .rating input:nth-of-type(2):checked~.emo:after,
+        .rating input:nth-of-type(2):hover~.emo:after {
+            content: '\f118';
+        }
 
-    .rating input:nth-of-type(1) {
-        right: 50px;
-    }
+        .rating input:nth-of-type(1) {
+            right: 50px;
+        }
 
-    .rating input:nth-of-type(2) {
-        right: 100px;
-    }
+        .rating input:nth-of-type(2) {
+            right: 100px;
+        }
 
-    .rating input:nth-of-type(3) {
-        right: 150px;
-    }
+        .rating input:nth-of-type(3) {
+            right: 150px;
+        }
 
-    .rating input:nth-of-type(4) {
-        right: 200px;
-    }
+        .rating input:nth-of-type(4) {
+            right: 200px;
+        }
 
-    .rating input:nth-of-type(5) {
-        right: 250px;
-    }
+        .rating input:nth-of-type(5) {
+            right: 250px;
+        }
 
-    .rating input:nth-of-type(6) {
-        right: 300px;
-    }
+        .rating input:nth-of-type(6) {
+            right: 300px;
+        }
 
-    .rating input:checked~.star:after,
-    .rating input:hover~.star:after {
-        content: '\f005';
-    }
+        .rating input:checked~.star:after,
+        .rating input:hover~.star:after {
+            content: '\f005';
+        }
 
-    .rating .star {
-        display: inline-block;
-        font-family: FontAwesome;
-        font-size: 30px;
-        text-align: center;
-        color: #FBB202;
-        cursor: pointer;
-        margin: 0;
-        padding: 0;
-    }
+        .rating .star {
+            display: inline-block;
+            font-family: FontAwesome;
+            font-size: 30px;
+            text-align: center;
+            color: #FBB202;
+            cursor: pointer;
+            margin: 0;
+            padding: 0;
+        }
 
-    .rating .star:after {
-        content: '\f006';
-    }
-    .picc{
-        border-radius: 200px;
-    }
+        .rating .star:after {
+            content: '\f006';
+        }
 
+        .picc {
+            border-radius: 200px;
+        }
     </style>
 </head>
 
 <body>
-   <nav class="menu-bar">
-    <img src="logo.jpg" height="39px" style="position: absolute;right: 0px;laft:-97px">
+    <nav class="menu-bar">
+        <img src="logo.jpg" class="logo">
         <ul>
-            <li><a href="Logout.php">تسجيل الخروج</a></li>
             <li><a href="cart.php"><span class="cart-icon"></span></a></li>
-            <li><a href="#"><span class="user-icon"></span></a></li>
+            <li><a href="#"><span class="user-icon"></span></a>
+                <div class="user">
+                    <ul>
+                        <li><a href="Logout.php">تسجيل الخروج</a></li>
+                        <li><a href="ChangePassword.php">تغيير كلمة السر</a></li>
+                    </ul>
+                </div>
+            </li>
             <li><a href="#">العروض</a></li>
             <li><a href="Home.php#cont">من نحن</a></li>
-
             <li class="rest"><a href=" #">المطاعم</a>
                 <div class="menu">
                     <ul>
-                        <li><a href="#">مطاعم ظاظا</a></li>
-                        <li><a href="#">مطاعم القرية الطلابية</a></li>
-                        <li><a href="#">مطاعم اسبريسو</a></li>
-                        <li><a href="#">مطاعم الشرقي</a></li>
-                        <li><a href="#">مطاعم الغربي</a></li>
-                        <li><a href="#">مطاعم الطب</a></li>
+                        <li><a href="Zaza.html">مطاعم ظاظا</a></li>
+                        <li><a href="Village.html">مطاعم القرية الطلابية</a></li>
+                        <li><a href="Espresso.html">مطاعم اسبريسو</a></li>
+                        <li><a href="Eastern.html">مطاعم الشرقي</a></li>
+                        <li><a href="Western.html">مطاعم الغربي</a></li>
+                        <li><a href="Medicine.html">مطاعم الطب</a></li>
                     </ul>
-                </div>                 
-            </li>       
+                </div>
+            </li>
             <li><a href="Home.php">الصفحة الرئيسية</a></li>
         </ul>
     </nav>
 
     <div class="intro">
         <img src="FastFood.png" class="logo2">
-        <h1><em>It's not just food,It's an Experience.</em></h1>
+        <h1><em>It's not just food, It's an Experience.</em></h1>
         <br><br><br><br>
     </div>
     <table class="rest">
         <tr>
-            <td style="margin:20px"><a href="Zaza.html"><img src="Zaza.jpg" class="picc">
+            <td style="margin:200px"><a href="Zaza.html"><img src="Zaza.jpg" class="picc">
                     <h3>مطاعم ظاظا<br><br></h3>
                 </a>
                 <?php
