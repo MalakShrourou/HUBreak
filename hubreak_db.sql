@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 23, 2023 at 04:02 PM
+-- Generation Time: May 23, 2023 at 08:06 PM
 -- Server version: 8.0.17
 -- PHP Version: 7.3.10
 
@@ -32,17 +32,18 @@ CREATE TABLE `cart` (
   `ID` int(255) NOT NULL,
   `n` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `price` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `quantity` varchar(255) NOT NULL
+  `quantity` varchar(255) NOT NULL,
+  `CartId` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `cart`
 --
 
-INSERT INTO `cart` (`ID`, `n`, `price`, `quantity`) VALUES
-(2, 'كوردون بلو', '2.25', '1'),
-(3, 'برغر', '2.00', '2'),
-(1, 'وجبة زنجر', '2.00', '2');
+INSERT INTO `cart` (`ID`, `n`, `price`, `quantity`, `CartId`) VALUES
+(3, 'برغر', '2.00', '1', 7),
+(4, 'فاهيتا', '2.00', '1', 8),
+(15, 'وجبة شاورما إيطالي', '1.50', '1', 9);
 
 -- --------------------------------------------------------
 
@@ -426,6 +427,12 @@ INSERT INTO `zaza_rate` (`zaza_r`) VALUES
 --
 
 --
+-- Indexes for table `cart`
+--
+ALTER TABLE `cart`
+  ADD PRIMARY KEY (`CartId`);
+
+--
 -- Indexes for table `eastern`
 --
 ALTER TABLE `eastern`
@@ -472,6 +479,16 @@ ALTER TABLE `western`
 --
 ALTER TABLE `zaza`
   ADD PRIMARY KEY (`ID`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `cart`
+--
+ALTER TABLE `cart`
+  MODIFY `CartId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
