@@ -287,12 +287,12 @@
             <li class="rest"><a href=" #">المطاعم</a>
                 <div class="menu">
                     <ul>
-                        <li><a href="Zaza.html">مطاعم ظاظا</a></li>
-                        <li><a href="Village.html">مطاعم القرية الطلابية</a></li>
-                        <li><a href="Espresso.html">مطاعم اسبريسو</a></li>
-                        <li><a href="Eastern.html">مطاعم الشرقي</a></li>
-                        <li><a href="Western.html">مطاعم الغربي</a></li>
-                        <li><a href="Medicine.html">مطاعم الطب</a></li>
+                        <li><a href="Zaza.html">مطعم ظاظا</a></li>
+                        <li><a href="Village.html">مطعم القرية الطلابية</a></li>
+                        <li><a href="Espresso.html">مطعم اسبريسو</a></li>
+                        <li><a href="Eastern.html">مطعم الشرقي</a></li>
+                        <li><a href="Western.html">مطعم الغربي</a></li>
+                        <li><a href="Medicine.html">مطعم الطب</a></li>
                     </ul>
                 </div>
             </li>

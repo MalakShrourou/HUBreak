@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 21, 2023 at 11:22 PM
+-- Generation Time: May 23, 2023 at 02:50 PM
 -- Server version: 8.0.17
 -- PHP Version: 7.3.10
 
@@ -34,6 +34,17 @@ CREATE TABLE `cart` (
   `price` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `quantity` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `cart`
+--
+
+INSERT INTO `cart` (`ID`, `n`, `price`, `quantity`) VALUES
+('3', 'برغر', '2', '1'),
+('2', 'كوردون بلو', '2.25', '1'),
+('4', 'فاهيتا', '2.00', '1'),
+('18', 'بطاطا كبيرة ', '1.25', '1'),
+('14', 'وجبة شاورما حلبي', '3.50', '2');
 
 -- --------------------------------------------------------
 
@@ -191,7 +202,11 @@ CREATE TABLE `medicine_rate` (
 --
 
 INSERT INTO `medicine_rate` (`medic_r`) VALUES
-('4');
+('4'),
+('5'),
+('3'),
+('5'),
+('3');
 
 -- --------------------------------------------------------
 
@@ -203,6 +218,32 @@ CREATE TABLE `time` (
   `ID` int(255) NOT NULL,
   `ET` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `time`
+--
+
+INSERT INTO `time` (`ID`, `ET`) VALUES
+(1, '20'),
+(2, '20'),
+(3, '20'),
+(4, '20'),
+(5, '20'),
+(6, '20'),
+(7, '20'),
+(8, '20'),
+(9, '25'),
+(10, '25'),
+(11, '25'),
+(12, '25'),
+(13, '25'),
+(14, '25'),
+(15, '25'),
+(16, '25'),
+(17, '5'),
+(18, '5'),
+(19, '5'),
+(20, '5');
 
 -- --------------------------------------------------------
 
@@ -270,6 +311,13 @@ INSERT INTO `village` (`ID`, `name`, `price`) VALUES
 CREATE TABLE `village_rate` (
   `village_r` varchar(2222) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `village_rate`
+--
+
+INSERT INTO `village_rate` (`village_r`) VALUES
+('5');
 
 -- --------------------------------------------------------
 

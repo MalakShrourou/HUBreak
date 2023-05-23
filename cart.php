@@ -13,6 +13,7 @@
     body {
         color: rgb(124, 17, 17);
         background-attachment: fixed;
+        background-color: white;
     }
 
     .menu-bar {
@@ -94,14 +95,23 @@
     }
 
     .table {
-        margin: 6% 6% auto 50%;
-        width: 40%;
-        border: solid #f18b05;
+        font-size: 30px;
+        margin: 6% 6% auto 15%;
+        width: 80%;
         color: rgb(124, 17, 17);
     }
 
     .table td {
-        text-align: right;
+        text-align: center;
+    }
+
+    tr {
+        height: 40px;
+    }
+
+    thead,
+    tfoot {
+        height: 30px;
     }
 
     footer {
@@ -110,7 +120,7 @@
         text-align: center;
         padding: 10px;
         margin-bottom: 0;
-        margin-top: 30%;
+        margin-top: 10%;
         background-attachment: fixed;
     }
 
@@ -138,6 +148,28 @@
         font-size: xx-large;
         text-align: center;
     }
+
+    .button {
+        cursor: pointer;
+        padding: 6px;
+        width: 60%;
+        background: red;
+        color: white;
+        border: 0;
+        border-radius: 5px;
+    }
+
+    .place {
+        background: orange;
+        width: 15%;
+        border: 0;
+        margin-left: 44%;
+        margin-top: 30px;
+        padding: 15px;
+        color: #FFFFFF;
+        font-size: 14px;
+        cursor: pointer;
+    }
     </style>
 </head>
 
@@ -160,12 +192,12 @@
             <li class="rest"><a href=" #">المطاعم</a>
                 <div class="menu">
                     <ul>
-                        <li><a href="Zaza.html">مطاعم ظاظا</a></li>
-                        <li><a href="Village.html">مطاعم القرية الطلابية</a></li>
-                        <li><a href="Espresso.html">مطاعم اسبريسو</a></li>
-                        <li><a href="Eastern.html">مطاعم الشرقي</a></li>
-                        <li><a href="Western.html">مطاعم الغربي</a></li>
-                        <li><a href="Medicine.html">مطاعم الطب</a></li>
+                        <li><a href="Zaza.html">مطعم ظاظا</a></li>
+                        <li><a href="Village.html">مطعم القرية الطلابية</a></li>
+                        <li><a href="Espresso.html">مطعم اسبريسو</a></li>
+                        <li><a href="Eastern.html">مطعم الشرقي</a></li>
+                        <li><a href="Western.html">مطعم الغربي</a></li>
+                        <li><a href="Medicine.html">مطعم الطب</a></li>
                     </ul>
                 </div>
             </li>
@@ -179,10 +211,12 @@
     if (!$database = mysqli_connect("localhost", "root", "12345678", "hubreak_db"))
         die("Sorry, could not connect to the server.");
     extract($_POST);
-    $query = "select quantity,price,n from cart ";
+    $query = "select price,quantity,n from cart";
     $result = mysqli_query($database, $query);
-    print("<table class='table' border='1px'>");
+    print("<form method='POST' action='deletacart.php'>");
+    print("<table class='table'>");
     print("<thead>");
+    print("<th>حذف</th>");
     print("<th>السعر</th>");
     print("<th>الكمية</th>");
     print("<th>المنتج</th>");
@@ -190,15 +224,27 @@
     $total = 0;
     while ($row = mysqli_fetch_row($result)) {
         print("<tr>");
+        print("<td><input type='submit' class='button' value='X'></td>");
         foreach ($row as $value)
             print("<td>$value</td>");
         $total = $total + $row[0] * $row[1];
+        print("</form>");
         print("</tr>");
     }
-    print("<tfoot><th>$total</th><th colspan='2'>المبلغ الاجمالي</th></tfoot>");
+    print("<tfoot style='margin-top:30px;'>");
+    print("<th></th>");
+    print("<th>$total</th>");
+    print("<th colspan='2'>المبلغ الاجمالي</th>");
+    print("</tfoot>");
     print("</table>");
+    print("</form>");
     mysqli_close($database);
     ?>
+    <div>
+        <form action="ET.php" method="POST">
+            <input type="submit" class="place" value="إنهاء الطلب">
+        </form>
+    </div>
     <footer>
         <p>Developed By</p>
         <p>HU Break Team &copy;</p>
