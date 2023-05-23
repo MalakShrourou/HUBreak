@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 23, 2023 at 02:50 PM
+-- Generation Time: May 23, 2023 at 04:02 PM
 -- Server version: 8.0.17
 -- PHP Version: 7.3.10
 
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `cart` (
-  `ID` varchar(255) NOT NULL,
+  `ID` int(255) NOT NULL,
   `n` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `price` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `quantity` varchar(255) NOT NULL
@@ -40,11 +40,9 @@ CREATE TABLE `cart` (
 --
 
 INSERT INTO `cart` (`ID`, `n`, `price`, `quantity`) VALUES
-('3', 'برغر', '2', '1'),
-('2', 'كوردون بلو', '2.25', '1'),
-('4', 'فاهيتا', '2.00', '1'),
-('18', 'بطاطا كبيرة ', '1.25', '1'),
-('14', 'وجبة شاورما حلبي', '3.50', '2');
+(2, 'كوردون بلو', '2.25', '1'),
+(3, 'برغر', '2.00', '2'),
+(1, 'وجبة زنجر', '2.00', '2');
 
 -- --------------------------------------------------------
 
@@ -63,7 +61,7 @@ CREATE TABLE `eastern` (
 --
 
 INSERT INTO `eastern` (`ID`, `name`, `price`) VALUES
-(1, 'زنجر', 2),
+(1, 'وجبة زنجر', 2),
 (2, 'كوردن بلو', 2.25),
 (3, 'برغر', 2),
 (4, 'فاهيتا', 2),
@@ -111,7 +109,7 @@ CREATE TABLE `espresso` (
 --
 
 INSERT INTO `espresso` (`ID`, `name`, `price`) VALUES
-(1, 'زنجر', 2),
+(1, 'وجبة زنجر', 2),
 (2, 'كوردن بلو', 2.25),
 (3, 'برغر', 2),
 (4, 'فاهيتا', 2),
@@ -166,7 +164,7 @@ CREATE TABLE `medicine` (
 --
 
 INSERT INTO `medicine` (`ID`, `name`, `price`) VALUES
-(1, 'زنجر', 2),
+(1, 'وجبة زنجر', 2),
 (2, 'كوردن بلو', 2.25),
 (3, 'برغر', 2),
 (4, 'فاهيتا', 2),
@@ -281,7 +279,7 @@ CREATE TABLE `village` (
 --
 
 INSERT INTO `village` (`ID`, `name`, `price`) VALUES
-(1, 'زنجر', 2),
+(1, 'وجبة زنجر', 2),
 (2, 'كوردن بلو', 2.25),
 (3, 'برغر', 2),
 (4, 'فاهيتا', 2),
@@ -336,7 +334,7 @@ CREATE TABLE `western` (
 --
 
 INSERT INTO `western` (`ID`, `name`, `price`) VALUES
-(1, 'زنجر', 2),
+(1, 'وجبة زنجر', 2),
 (2, 'كوردن بلو', 2.25),
 (3, 'برغر', 2),
 (4, 'فاهيتا', 2),
@@ -384,7 +382,7 @@ CREATE TABLE `zaza` (
 --
 
 INSERT INTO `zaza` (`ID`, `name`, `price`) VALUES
-(1, 'زنجر', 2),
+(1, 'وجبة زنجر', 2),
 (2, 'كوردن بلو', 2.25),
 (3, 'برغر', 2),
 (4, 'فاهيتا', 2),
