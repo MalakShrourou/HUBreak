@@ -212,7 +212,7 @@
     if (!$database = mysqli_connect("localhost", "root", "12345678", "hubreak_db"))
         die("Sorry, could not connect to the server.");
     extract($_POST);
-    $query = "select price,quantity,n from cart";
+    $query = "select price,quantity,n,CartId from cart";
     $result = mysqli_query($database, $query);
     print("<table class='table'>");
     print("<thead>");
@@ -224,12 +224,16 @@
     $total = 0;
     while ($row = mysqli_fetch_row($result)) {
         print("<tr>");
-        print("<form method='POST' action='deletecart.php'>");
+        print("<form method='get' action='deletecart.php'>");
         print("<td><input type='submit' class='button' value='X'></td>");
-        foreach ($row as $value)
-            print("<td>$value</td>");
+        $x = 0;
+        foreach ($row as $value) {
+            if ($x != 3)
+                print("<td>$value</td>");
+            $x++;
+        }
         $total = $total + $row[0] * $row[1];
-        $nname = $row[2];
+        print("<input type='hidden' name='CartId' value='$row[3]'>");
         print("</form>");
         print("</tr>");
     }
