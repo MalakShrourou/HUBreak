@@ -19,23 +19,23 @@ mysqli_close($database);
 
 <head>
     <style>
-    * {
-        margin: 0;
-        padding: 0;
-        font-family: 'Times New Roman', Times, serif;
-        box-sizing: border-box;
-    }
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+            box-sizing: border-box;
+        }
 
-    body {
-        background-attachment: fixed;
-        background-image: url("cover.jpg");
-    }
+        body {
+            background-attachment: fixed;
+            background-image: url("cover.jpg");
+        }
 
-    h1 {
-        color: white;
-        text-align: center;
-        font-size: 80px;
-    }
+        h1 {
+            color: white;
+            text-align: center;
+            font-size: 80px;
+        }
     </style>
 </head>
 
@@ -46,20 +46,23 @@ mysqli_close($database);
     $dbSessionDurationTime = $max * 60 * 1000;
     ?>
     <script type="text/javascript">
-    var millis = <?php echo $dbSessionDurationTime; ?>
+        var millis = <?php echo $dbSessionDurationTime; ?>
 
-    function displaytimer() {
-        var hours = Math.floor(millis / 36e5),
-            mins = Math.floor((millis % 36e5) / 6e4),
-            secs = Math.floor((millis % 6e4) / 1000);
-        var remainingTime = mins + ':' + secs + ' minutes';
-        console.log(remainingTime);
-        document.write(remainingTime);
-    }
-    setInterval(function() {
-        millis -= 1000;
-        displaytimer();
-    }, 1000);
+        function displaytimer() {
+            var hours = Math.floor(millis / 36e5),
+                mins = Math.floor((millis % 36e5) / 6e4),
+                secs = Math.floor((millis % 6e4) / 1000);
+            //    var remainingTime = mins + ':' + secs + ' minutes';
+            //    console.log(remainingTime);
+            //    document.write(remainingTime);
+            //   location.reload();
+            document.querySelector(".min").innerHTML = mins;
+            document.querySelector(".sec").innerHTML = secs;
+        }
+        setInterval(function () {
+            millis -= 1000;
+            displaytimer();
+        }, 1000);
     </script>
 </body>
 
