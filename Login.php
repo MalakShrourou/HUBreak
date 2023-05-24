@@ -163,7 +163,7 @@ if (isset($submit)) {
         <div class="form">
             <form class="login-form" method="POST" autocomplete="off">
                 <input type="email" name="email" placeholder="Email" />
-                <input type="password" name="password" placeholder="Password(must containe 8 digits)" />
+                <input type="password" name="password" placeholder="Password (must containe 8 digits)" />
                 <p class="error">
                     <?php echo $error; ?>
                 </p>
