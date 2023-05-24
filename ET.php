@@ -43,27 +43,8 @@ mysqli_close($database);
 
     <h1 style="margin-top:20%">Your waiting time is : </h1>
     <?php
-    $dbSessionDurationTime = $max * 60 * 1000;
-    ?>
-    <script type="text/javascript">
-        var millis = <?php echo $dbSessionDurationTime; ?>
-
-        function displaytimer() {
-            var hours = Math.floor(millis / 36e5),
-                mins = Math.floor((millis % 36e5) / 6e4),
-                secs = Math.floor((millis % 6e4) / 1000);
-            //    var remainingTime = mins + ':' + secs + ' minutes';
-            //    console.log(remainingTime);
-            //    document.write(remainingTime);
-            //   location.reload();
-            document.querySelector(".min").innerHTML = mins;
-            document.querySelector(".sec").innerHTML = secs;
-        }
-        setInterval(function () {
-            millis -= 1000;
-            displaytimer();
-        }, 1000);
-    </script>
+    print("<h1>$max minutes</h1>")
+        ?>
 </body>
 
 </html>
